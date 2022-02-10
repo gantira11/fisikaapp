@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, must_be_immutable
 
 import 'package:fisikaapp/common/colors.dart';
+import 'package:fisikaapp/module/materi/materi_konsep_foton/konsep_foton_screen.dart';
 import 'package:fisikaapp/utils/custom_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -39,7 +40,10 @@ class MateriScreen extends StatelessWidget {
                   ),
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushReplacementNamed(
+                        context, KonsepFotonScreen.routename);
+                  },
                   child: Container(
                     decoration: BoxDecoration(color: Colors.white, boxShadow: [
                       BoxShadow(
