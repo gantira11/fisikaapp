@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:fisikaapp/common/colors.dart';
+import 'package:fisikaapp/module/materi/materi_screen.dart';
 import 'package:fisikaapp/utils/custom_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -11,18 +12,24 @@ class EfekFotoListrikScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-        child: Scaffold(
-      appBar: AppBar(
-        title: Text("Materi"),
-        flexibleSpace: SvgPicture.asset(
-          "assets/images/Group 2.svg",
-          fit: BoxFit.fitWidth,
+    return WillPopScope(
+      onWillPop: () async {
+        Navigator.pushReplacementNamed(context, MateriScreen.routename);
+        return Future.value(false);
+      },
+      child: SafeArea(
+          child: Scaffold(
+        appBar: AppBar(
+          title: Text("Materi"),
+          flexibleSpace: SvgPicture.asset(
+            "assets/images/Group 2.svg",
+            fit: BoxFit.fitWidth,
+          ),
         ),
-      ),
-      drawer: CustomDrawer(),
-      body: EfekFotolistrikWidget(),
-    ));
+        drawer: CustomDrawer(),
+        body: EfekFotolistrikWidget(),
+      )),
+    );
   }
 }
 
