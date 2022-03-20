@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:fisikaapp/common/colors.dart';
+import 'package:fisikaapp/module/uji_kemampuan/uji_kemampuan_1/uji_kemampuan_1_screen.dart';
 import 'package:fisikaapp/utils/custom_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -53,7 +54,10 @@ class _UjiKemampuanWidgetState extends State<UjiKemampuanWidget> {
               ),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushReplacementNamed(
+                    context, KemampuanSoalPertama.routename);
+              },
               child: Container(
                 decoration: BoxDecoration(color: Colors.white, boxShadow: [
                   BoxShadow(
