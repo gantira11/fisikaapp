@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_tex/flutter_tex.dart';
 
+import '../common/colors.dart';
+
 class CustomQuestionWidget extends StatefulWidget {
   final String soal,
       answerA,
@@ -49,34 +51,21 @@ class _CustomQuestionWidgetState extends State<CustomQuestionWidget> {
     return Column(
       // ignore: prefer_const_literals_to_create_immutables
       children: [
+        Text("Soal No ${widget.nomor}"),
         ListTile(
           title: TeXView(
-            child: TeXViewDocument(widget.soal),
+            fonts: const [
+              TeXViewFont(
+                  fontFamily: 'roboto', src: 'assets/font/Roboto-Black.ttf')
+            ],
+            renderingEngine: TeXViewRenderingEngine.katex(),
+            loadingWidgetBuilder: (_) => CircularProgressIndicator(),
+            child: TeXViewDocument(widget.soal,
+                style: TeXViewStyle(
+                  padding: TeXViewPadding.all(0),
+                  margin: TeXViewMargin.all(0),
+                )),
           ),
-          // title: Column(
-          //   children: [
-          //     Row(
-          //       children: [
-          //         RichText(text: TextSpan(text: widget.nomor)),
-          //         // ignore: prefer_const_literals_to_create_immutables
-          //         Flexible(
-          //             child: RichText(
-          //                 // ignore: prefer_const_literals_to_create_immutables
-          //                 text: TextSpan(
-          //           text: widget.soal,
-          //         ))),
-          //       ],
-          //     ),
-          //     Padding(
-          //       padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
-          //       child: SizedBox(
-          //         height: MediaQuery.of(context).size.width * 0.3,
-          //         width: MediaQuery.of(context).size.width * 0.8,
-          //         child: Image.asset("assets/materi/konsepfoton/2.png"),
-          //       ),
-          //     ),
-          //   ],
-          // ),
         ),
         SizedBox(
           height: 20,
@@ -109,7 +98,12 @@ class _CustomQuestionWidgetState extends State<CustomQuestionWidget> {
                 ]),
             child: ListTile(
               title: TeXView(
+                renderingEngine: TeXViewRenderingEngine.katex(),
+                loadingWidgetBuilder: (_) => CircularProgressIndicator(),
                 child: TeXViewDocument(widget.answerA),
+                style: TeXViewStyle(
+                  margin: TeXViewMargin.all(0),
+                ),
               ),
             ),
           ),
@@ -145,7 +139,12 @@ class _CustomQuestionWidgetState extends State<CustomQuestionWidget> {
                 ]),
             child: ListTile(
               title: TeXView(
-                child: TeXViewDocument(widget.answerB),
+                renderingEngine: TeXViewRenderingEngine.katex(),
+                loadingWidgetBuilder: (_) => CircularProgressIndicator(),
+                child: TeXViewDocument(widget.answerB,
+                    style: TeXViewStyle(
+                      margin: TeXViewMargin.all(0),
+                    )),
               ),
             ),
           ),
@@ -181,7 +180,13 @@ class _CustomQuestionWidgetState extends State<CustomQuestionWidget> {
                 ]),
             child: ListTile(
                 title: TeXView(
-              child: TeXViewDocument(widget.answerC),
+              loadingWidgetBuilder: (_) =>
+                  Center(child: CircularProgressIndicator()),
+              renderingEngine: TeXViewRenderingEngine.katex(),
+              child: TeXViewDocument(widget.answerC,
+                  style: TeXViewStyle(
+                    margin: TeXViewMargin.all(0),
+                  )),
             )),
           ),
         ),
@@ -216,7 +221,12 @@ class _CustomQuestionWidgetState extends State<CustomQuestionWidget> {
                 ]),
             child: ListTile(
                 title: TeXView(
-              child: TeXViewDocument(widget.answerD),
+              renderingEngine: TeXViewRenderingEngine.katex(),
+              loadingWidgetBuilder: (_) => CircularProgressIndicator(),
+              child: TeXViewDocument(widget.answerD,
+                  style: TeXViewStyle(
+                    margin: TeXViewMargin.all(0),
+                  )),
             )),
           ),
         ),
@@ -251,22 +261,30 @@ class _CustomQuestionWidgetState extends State<CustomQuestionWidget> {
                 ]),
             child: ListTile(
                 title: TeXView(
-              child: TeXViewDocument(widget.answerE),
+              renderingEngine: TeXViewRenderingEngine.katex(),
+              loadingWidgetBuilder: (_) => CircularProgressIndicator(),
+              child: TeXViewDocument(widget.answerE,
+                  style: TeXViewStyle(
+                    margin: TeXViewMargin.all(0),
+                  )),
             )),
           ),
         ),
         SizedBox(
           height: 20,
         ),
-        ElevatedButton(
-            onPressed: (() {
-              setState(() {
-                visiblePembahasan = !visiblePembahasan;
-              });
-            }),
-            child: Text("Tampilkan Pembahasan")),
         Visibility(
-            visible: visiblePembahasan,
+          visible: false,
+          child: ElevatedButton(
+              onPressed: (() {
+                setState(() {
+                  visiblePembahasan = !visiblePembahasan;
+                });
+              }),
+              child: Text("Tampilkan Pembahasan")),
+        ),
+        Visibility(
+            visible: false,
             child: ListTile(
               title: ListTile(
                 title: Padding(

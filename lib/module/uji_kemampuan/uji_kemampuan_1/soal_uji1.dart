@@ -2,7 +2,6 @@
 
 import 'package:fisikaapp/common/colors.dart';
 import 'package:fisikaapp/common/etc.dart';
-import 'package:fisikaapp/module/uji_kemampuan/uji_kemampuan_1/soal_uji1/list_soal.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_tex/flutter_tex.dart';
@@ -249,7 +248,7 @@ class _TextQuizOneState extends State<TextQuizOne> {
                       TeXViewDocument(quizList[currentQuizIndex].statement,
                           style: TeXViewStyle(
                               fontStyle: TeXViewFontStyle(fontFamily: "roboto"),
-                              textAlign: TeXViewTextAlign.Justify)),
+                              textAlign: TeXViewTextAlign.justify)),
                       TeXViewGroup(
                           children: quizList[currentQuizIndex]
                               .options
@@ -284,7 +283,7 @@ class _TextQuizOneState extends State<TextQuizOne> {
                     border: TeXViewBorder.all(
                       TeXViewBorderDecoration(
                           borderColor: Colors.blue,
-                          borderStyle: TeXViewBorderStyle.Solid,
+                          borderStyle: TeXViewBorderStyle.solid,
                           borderWidth: 5),
                     ),
                     backgroundColor: Colors.white,
@@ -327,21 +326,24 @@ class _TextQuizOneState extends State<TextQuizOne> {
                         child: const Text("Sebelumnya"),
                       ),
                     ),
-                    SizedBox(
-                      width: 150,
-                      child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.blue,
+                    Visibility(
+                      visible: currentQuizIndex < 10,
+                      child: SizedBox(
+                        width: 150,
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            primary: Colors.blue,
+                          ),
+                          onPressed: (() {
+                            setState(() {
+                              selectedOptionId = "";
+                              if (currentQuizIndex != quizList.length - 1) {
+                                currentQuizIndex++;
+                              }
+                            });
+                          }),
+                          child: const Text("Berikutnya"),
                         ),
-                        onPressed: (() {
-                          setState(() {
-                            selectedOptionId = "";
-                            if (currentQuizIndex != quizList.length - 1) {
-                              currentQuizIndex++;
-                            }
-                          });
-                        }),
-                        child: const Text("Berikutnya"),
                       ),
                     ),
                   ],

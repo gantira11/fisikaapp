@@ -28,7 +28,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   
-  flutter_tex:
+  flutter_tex: ^4.0.3+4
   flutter_svg: ^1.0.3
   flutter:
     sdk: flutter
