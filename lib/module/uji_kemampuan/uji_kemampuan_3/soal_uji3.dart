@@ -4,17 +4,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_tex/flutter_tex.dart';
 
-class SoalUjiKedua extends StatefulWidget {
+class SoalUjiKetiga extends StatefulWidget {
   final TeXViewRenderingEngine renderingEngine;
-  const SoalUjiKedua(
+  const SoalUjiKetiga(
       {Key? key, this.renderingEngine = const TeXViewRenderingEngine.katex()})
       : super(key: key);
 
   @override
-  State<SoalUjiKedua> createState() => _SoalUjiKeduaState();
+  State<SoalUjiKetiga> createState() => _SoalUjiKetigaState();
 }
 
-class _SoalUjiKeduaState extends State<SoalUjiKedua> {
+class _SoalUjiKetigaState extends State<SoalUjiKetiga> {
   int currentQuizIndex = 0;
   String selectedOptionId = "";
   bool isWrong = false;
@@ -22,152 +22,152 @@ class _SoalUjiKeduaState extends State<SoalUjiKedua> {
   List<Quiz> quizList = [
     // no 1
     Quiz(statement: r"""
-                  Perhatikan pernyataan-pernyataan berikut!
+                  Perhatikan pernyataan di bawah ini!
                   <br><br>
                   <ol type='i'>
-                    <li>i) Peristiwa efek fotolistrik dapat dijelaskan dengan menganggap cahaya terdiri dari paket-paket energi.</li>
+                    <li>i) Foton terhambur dan elektron terhambur terjadi setelah elektron menumbuk foton diam.</li>
                   
-                    <li>ii) Peristiwa efek fotolistrik dapat membuktikan bahwa cahaya dapat berperilaku sebagai gelombang. </li>
+                    <li>ii) Elektron terhambur dapat berubah menjadi elektron dan positron. </li>
                    
-                    <li>iii) Energi elektron yang keluar dari permukaan logam bergantung pada frekuensi.</li>
+                    <li>iii) Peristiwa berubahnya elektron menjadi partikel lain disebut produksi pasangan.</li>
                   
-                    <li>iv) Foton memiliki kecepatan yang melebihi kecepatan cahaya.</li>
-                  
-                    <li>v) Peristiwa efek fotolistrik terjadi pada daerah sekitar inframerah.</li>
+                    <li>iv) Foton terhambur dapat berubah menjadi elektron dan positron.</li>
                   </ol>
                   <br><br>
-                  Pernyataan yang benar tentang efek fotolistrik adalah…
+                  Pernyataan yang benar tentang efek Compton adalah…
                     """, options: [
-      QuizOption('a', r"""(A)   i) dan ii)"""),
-      QuizOption('b', r"""(B)   i) dan iii)"""),
-      QuizOption('c', r"""(C)   i) dan iv)"""),
-      QuizOption('d', r"""(D)   ii) dan iii)"""),
-      QuizOption('e', r"""(E)   ii) dan iv)"""),
-    ], correctOptionId: 'b'),
-    Quiz(statement: r"""
-                  Frekuensi kerja sebuah logam adalah \(5 \times 10^{14} Hz \), 
-                  ketika diberi cahaya berfrekuensi \(8 \times 10^{14} Hz \). 
-                  Maka besar energi kinetik elektron yang keluar dari logam tersebut adalah…
-                    """, options: [
-      QuizOption('a', r"""(A)   \(3,989 \times 10^{-19} Joule \)"""),
-      QuizOption('b', r"""(B)   \(2,989 \times 10^{-19} Joule \)"""),
-      QuizOption('c', r"""(C)   \(1,989 \times 10^{-19} Joule \)"""),
-      QuizOption('d', r"""(D)   \(4,969 \times 10^{-19} Joule \)"""),
-      QuizOption('e', r"""(E)   \(5,909 \times 10^{-19} Joule \)"""),
-    ], correctOptionId: 'c'),
-    Quiz(statement: r"""
-                  Energi kinetik elektron yang keluar dari logam ketika diberi 
-                  cahaya berenergi \(3,3 \times 10^{-19} Joule \) adalah \(1,5 \times 10^{-19} Joule \). 
-                  Maka besar energi ambang logam tersebut adalah…
-
-                    """, options: [
-      QuizOption('a', r"""(A)   \(1,8 \times 10^{-19} Joule \)"""),
-      QuizOption('b', r"""(B)   \(2,8 \times 10^{-19} Joule \)"""),
-      QuizOption('c', r"""(C)   \(3,8 \times 10^{-19} Joule \)"""),
-      QuizOption('d', r"""(D)   \(4,8 \times 10^{-19} Joule \)"""),
-      QuizOption('e', r"""(E)   \(5,8 \times 10^{-19} Joule \)"""),
-    ], correctOptionId: 'a'),
-    Quiz(statement: r"""
-                  Jika sinar ungu frekuensi \(10^6 Hz \) dijatuhkan pada permukaan 
-                  logam yang mempunyai energi ambang 2/3 kali kuanta energi 
-                  sinar ungu dan jika tetapan Planck \(6,6 \times 10^{-34} Js \), 
-                  maka energi kinetik elektron yang lepas adalah…
-
-
-                    """, options: [
-      QuizOption('a', r"""(A)   \(1,11 \times 10^{-18} J \)"""),
-      QuizOption('b', r"""(B)   \(2,21 \times 10^{-18} J \)"""),
-      QuizOption('c', r"""(C)   \(3,31 \times 10^{-18} J \)"""),
-      QuizOption('d', r"""(D)   \(4,41 \times 10^{-18} J \)"""),
-      QuizOption('e', r"""(E)   \(6,61 \times 10^{-18} J \)"""),
-    ], correctOptionId: 'b'),
-    Quiz(
-        isHasImage: true,
-        statement: r"""
-                  Grafik di atas adalah grafik \(E_{k} \) fotoelektron terhadap frekuensi 
-                  sinar yang digunakan pada efek fotolistrik. Nilai P pada grafik 
-                  tersebut adalah … Joule <br>
-                  ( \(h=6,63 \times 10^{-34} Js\) )
-
-                    """,
-        options: [
-          QuizOption('a', r"""(A)   \(2,64 \times 10^{-33}  \)"""),
-          QuizOption('b', r"""(B)   \(3,35 \times 10^{-30}  \)"""),
-          QuizOption('c', r"""(C)   \(6,63 \times 10^{-20}  \)"""),
-          QuizOption('d', r"""(D)   \(2,64 \times 10^{-19}  \)"""),
-          QuizOption('e', r"""(E)   \(3,35 \times 10^{-19}  \)"""),
-        ],
-        correctOptionId: 'c'),
-    // no 6
-    Quiz(statement: r"""
-                  Frekuensi ambang suatu logam adalah \(1,5 \times 10^{16} Hz \). 
-                  Apabila logam tersebut disinari dengan cahaya yang mempunyai 
-                  frekuensi \(2 \times 10^{16} Hz \), \(h=6,63 \times 10^{-34} Js\), 
-                  dan \(1 eV = 1,6 \times 10^{-19} J \), 
-                  maka besarnya energi kinetik elektron yang terlepas dari 
-                  permukaan logam tersebut adalah…
-
-                    """, options: [
-      QuizOption('a', r"""(A)   41,2 eV """),
-      QuizOption('b', r"""(B)   29,6 eV """),
-      QuizOption('c', r"""(C)   13,6 eV """),
-      QuizOption('d', r"""(D)   20,7 eV """),
-      QuizOption('e', r"""(E)   5,20 eV """),
+      QuizOption('a', r"""(A)   1), 2), dan 3)"""),
+      QuizOption('b', r"""(B)   1) dan 3)"""),
+      QuizOption('c', r"""(C)   2) dan 4)"""),
+      QuizOption('d', r"""(D)   Hanya 4)"""),
+      QuizOption('e', r"""(E)   Semua pernyataan benar"""),
     ], correctOptionId: 'd'),
-
-    // no 7
     Quiz(statement: r"""
-                  Sebuah partikel elektron bermassa \(9 \times 10^{-31} kg \) bergerak dengan 
-                  laju \(1,5 \times 10^6 m/s \). Jika konstanta Planck = \(6,63 \times 10^{-34} Js \), 
-                  panjang gelombang de Broglie elektron adalah…
-                    """, options: [
-      QuizOption('a', r"""(A)   \(3,21 \times 10^{-10} \) m """),
-      QuizOption('b', r"""(B)   \(4,91 \times 10^{-10} \) m """),
-      QuizOption('c', r"""(C)   \(5,01 \times 10^{-10} \) m """),
-      QuizOption('d', r"""(D)   \(6,61 \times 10^{-10} \) m """),
-      QuizOption('e', r"""(E)   \(8,21 \times 10^{-10} \) m """),
-    ], correctOptionId: 'b'),
-    Quiz(statement: r"""
-                  Sebuah partikel elektron bermassa \(9 \times 10^{31} kg \) dipercepat 
-                  melalui beda potensial 100 volt mempunyai laju \(5,93 \times 10^6 m/s \). 
-                  Jika konstanta Planck = \(6,63 \times 10^{-34} Js \), maka panjang 
-                  gelombang de Broglie elektron adalah…
+                 Pada produksi sinar X digunakan beda potensial sebesar 50 kV. 
+                 Jika muatan elektron sebesar \(1,6 \times 10^{-19} C \) dan 
+                 massanya \(9 \times 10^{-31} kg \), 
+                 kelajuan elektron ketika bergerak menuju anode adalah…
 
                     """, options: [
-      QuizOption('a', r"""(A)   \(1,23 \times 10^{-4} \) m """),
-      QuizOption('b', r"""(B)   \(1,23 \times 10^{-6} \) m """),
-      QuizOption('c', r"""(C)   \(1,23 \times 10^{-7} \) m """),
-      QuizOption('d', r"""(D)   \(1,23 \times 10^{-8} \) m """),
-      QuizOption('e', r"""(E)   \(1,23 \times 10^{-10} \) m """),
-    ], correctOptionId: 'e'),
-    // no 9
-    Quiz(statement: r"""
-                  Jika kelajuan perambatan cahaya di udara sebesar \(3 \times 10^8 m/s \), 
-                  dan nilai konstanta Planck = \(6,6 \times 10^{-34} Js \), maka foton yang panjang 
-                  gelombangnya 100 angstrom mempunyai momentum sebesar…
-
-
-                    """, options: [
-      QuizOption('a', r"""(A)   \(1,2 \times 10^{-36} kgm/s \) m """),
-      QuizOption('b', r"""(B)   \(1,5 \times 10^{-33} kgm/s \) m """),
-      QuizOption('c', r"""(C)   \(6,6 \times 10^{-26} kgm/s \) m """),
-      QuizOption('d', r"""(D)   \(1,5 \times 10^{-25} kgm/s \) m """),
-      QuizOption('e', r"""(E)   \(10^{26} kgm/s \) m """),
+      QuizOption('a', r"""(A)   \(1,67 \times 10^{-7} m/s \)"""),
+      QuizOption('b', r"""(B)   \(1,67 \times 10^{-17} m/s \)"""),
+      QuizOption('c', r"""(C)   \(1,33 \times 10^{-7} m/s \)"""),
+      QuizOption('d', r"""(D)   \(1,33 \times 10^{-17} m/s \)"""),
+      QuizOption('e', r"""(E)   \(10^{-7} m/s \)"""),
     ], correctOptionId: 'c'),
     Quiz(statement: r"""
-                  Sebuah partikel bermassa m bergerak dengan kecepatan v memiliki 
-                  panjang gelombang de Broglie . Jika massa partikel menyusut 
-                  menjadi ¼ kali semula dan bergerak dengan kecepatan 2 kali semula, 
-                  perbandingan gelombang de Broglie sesudah dan sebelum mengalami penyusutan adalah…
+                 Panjang gelombang minimum yang dihasilkan tabung sinar X sebesar 0,495 Å. 
+                 Maka besar potensial akselerasi yang dipancarkan oleh tabung adalah…
+                (\(h=6,6 \times 10^{-34} Js \), \(c=3 \times 10^{8} m/s \) , 
+                dan \(e = 1,6 \times 10^{-19} C \))
 
+                    """, options: [
+      QuizOption('a', r"""(A)   30 kV"""),
+      QuizOption('b', r"""(B)   25 kV"""),
+      QuizOption('c', r"""(C)   20 kV"""),
+      QuizOption('d', r"""(D)   15 kV"""),
+      QuizOption('e', r"""(E)   10 kV"""),
+    ], correctOptionId: 'b'),
+    Quiz(statement: r"""
+                 Suatu produksi sinar X menggunakan sumber tegangan 30 kV. 
+                 Berapa energi kinetik yang dimiliki elektron ketika bergerak 
+                 menuju anode jika diketahui massa elektron adalah \(9 \times 10^{-31} kg \)
+                 dan besar muatannya \(1,6 \times 10^{-19} C \)?
+
+
+                    """, options: [
+      QuizOption('a', r"""(A)   \(4,8 \times 10^{-17} J \)"""),
+      QuizOption('b', r"""(B)   \(4,8 \times 10^{-7} J \)"""),
+      QuizOption('c', r"""(C)   \(2,4 \times 10^{-17} J \)"""),
+      QuizOption('d', r"""(D)   \(2,4 \times 10^{-7} J \)"""),
+      QuizOption('e', r"""(E)   \(3,6 \times 10^{-17} J \)"""),
+    ], correctOptionId: 'a'),
+    // soal no 5
+    Quiz(statement: r"""
+                 Sebuah foton hambur memiliki sudut hambur \(53^o \) dan panjang 
+                 gelombang 0,54 nm. Jika cos \(53^o \) adalah 3/5 dan tetapan 
+                 \(6,6 \times 10^{-34} Js \), panjang gelombang foton yang datang adalah…
+
+
+                    """, options: [
+      QuizOption('a', r"""(A)   \(1,727 \times 10^{-19} m \)"""),
+      QuizOption('b', r"""(B)   \(5,4906 \times 10^{-19} m \)"""),
+      QuizOption('c', r"""(C)   \(5,4048 \times 10^{-10} m \)"""),
+      QuizOption('d', r"""(D)   \(5,3903 \times 10^{-10} m \)"""),
+      QuizOption('e', r"""(E)   \(5,3903 \times 10^{-11} m \)"""),
+    ], correctOptionId: 'd'),
+    // soal no 6
+    Quiz(statement: r"""
+                 Sebuah foton dengan panjang gelombang  menumbuk elektron diam sehingga 
+                 panjang gelombang foton hambur menjadi 4 . 
+                 Tentukan perbandingan momentum yang dimiliki 
+                 foton tersebut sebelum dan sesudah menumbuk elektron!
 
 
                     """, options: [
       QuizOption('a', r"""(A)   1 : 2 """),
-      QuizOption('b', r"""(B)   1 : 3 """),
-      QuizOption('c', r"""(C)   1 : 6 """),
-      QuizOption('d', r"""(D)   2 : 1 """),
-      QuizOption('e', r"""(E)   3 : 1 """),
+      QuizOption('b', r"""(B)   1 : 4"""),
+      QuizOption('c', r"""(C)   2 : 1"""),
+      QuizOption('d', r"""(D)   4 : 1"""),
+      QuizOption('e', r"""(E)   1 : 8"""),
+    ], correctOptionId: 'd'),
+    Quiz(statement: r"""
+                 Sebuah foton memiliki panjang gelombang 20 Å menumbuk elektron 
+                 yang diam. Setelah tumbukkan, 
+                 foton terhambur menyimpang \(60^o \) dari arah semula. 
+                 Panjang gelombang foton hambur adalah…
+
+
+                    """, options: [
+      QuizOption('a', r"""(A)   19,988 Å """),
+      QuizOption('b', r"""(B)   20,012 Å """),
+      QuizOption('c', r"""(C)   20,112 Å """),
+      QuizOption('d', r"""(D)   19,998 Å """),
+      QuizOption('e', r"""(E)   20,212 Å """),
+    ], correctOptionId: 'b'),
+    // no 8
+    Quiz(statement: r"""
+                 Sinar X dengan panjang gelombang 4 Å dihamburkan dari sebuah 
+                 balok karbon sehingga membentuk sudut \(90^o \) maka perubahan 
+                 panjang gelombang foton sinar X tersebut adalah…
+
+
+                    """, options: [
+      QuizOption('a', r"""(A)  6% """),
+      QuizOption('b', r"""(B)   4%  """),
+      QuizOption('c', r"""(C)   1,2%  """),
+      QuizOption('d', r"""(D)   0,4% """),
+      QuizOption('e', r"""(E)   0,6% """),
+    ], correctOptionId: 'e'),
+    Quiz(statement: r"""
+                 Sebuah foton hambur memiliki panjang gelombang 40 Å setelah 
+                 menumbuk elektron. Jika foton hambur membentuk sudut \(60^o \) dari 
+                 lintasan awalnya maka panjang gelombang foton sebelum tumbukan adalah…
+
+
+                    """, options: [
+      QuizOption('a', r"""(A)  49,998 Å  """),
+      QuizOption('b', r"""(B)   50,012 Å  """),
+      QuizOption('c', r"""(C)   50,112 Å  """),
+      QuizOption('d', r"""(D)   49,988 Å """),
+      QuizOption('e', r"""(E)   48,988 Å """),
+    ], correctOptionId: 'd'),
+    Quiz(statement: r"""
+                Jika elektron dan foton memiliki panjang gelombang yang sama, 
+                maka keduanya memiliki momentum yang sama.<br><br>
+                SEBAB <br><br>
+                Momentum berbanding lurus dengan panjang gelombang
+
+
+
+                    """, options: [
+      QuizOption('a',
+          r"""(A)  Jika pernyataan benar, alasan benar, keduanya memiliki hubungan sebab akibat.  """),
+      QuizOption('b',
+          r"""(B)   Jika pernyataan benar, alasan benar, keduanya tidak memiliki hubungan sebab akibat. """),
+      QuizOption('c', r"""(C)   Jika pernyataan benar, alasan salah.  """),
+      QuizOption('d', r"""(D)   Jika pernyataan salah, alasan benar. """),
+      QuizOption('e', r"""(E)   Jika pernyataan dan alasan salah. """),
     ], correctOptionId: 'd'),
   ];
   @override

@@ -342,7 +342,8 @@ class _TextQuizOneState extends State<TextQuizOne> {
                               }
                             });
                           }),
-                          child: const Text("Berikutnya"),
+                          child: Text(
+                              currentQuizIndex == 9 ? "Selesai" : "Berikutnya"),
                         ),
                       ),
                     ),
