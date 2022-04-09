@@ -9,6 +9,7 @@ import 'package:fisikaapp/module/uji_kemampuan/uji_kemampuan.dart';
 import 'package:fisikaapp/module/uji_kemampuan/uji_kemampuan_1/uji_kemampuan_1_screen.dart';
 import 'package:fisikaapp/module/uji_kemampuan/uji_kemampuan_2/uji_kemampuan_2_screen.dart';
 import 'package:fisikaapp/module/uji_kemampuan/uji_kemampuan_3/uji_kemampuan_3_screen.dart';
+import 'package:fisikaapp/module/uji_kompetensi/soal_uji_kompetensi/uji_kompetensi.dart';
 import 'package:fisikaapp/module/uji_kompetensi/uji_kompetensi_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -32,6 +33,8 @@ Route? onGenerateRoutes(RouteSettings settings) {
       return MaterialPageRoute(builder: (_) => UjiKemampuan2());
     case UjiKemampuan3.routename:
       return MaterialPageRoute(builder: (_) => UjiKemampuan3());
+    case UjiKompetensiPertama.routename:
+      return MaterialPageRoute(builder: (_) => UjiKompetensiPertama());
     default:
       return MaterialPageRoute(builder: (_) => DashBoardScreen());
   }

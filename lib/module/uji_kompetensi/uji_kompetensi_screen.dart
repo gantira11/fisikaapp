@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:fisikaapp/common/colors.dart';
+import 'package:fisikaapp/module/uji_kompetensi/soal_uji_kompetensi/uji_kompetensi.dart';
 import 'package:fisikaapp/utils/custom_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -52,7 +53,10 @@ class _UjiKompetensiWidgetState extends State<UjiKompetensiWidget> {
           Padding(
             padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushReplacementNamed(
+                    context, UjiKompetensiPertama.routename);
+              },
               child: Container(
                 decoration: BoxDecoration(color: Colors.white, boxShadow: [
                   BoxShadow(
