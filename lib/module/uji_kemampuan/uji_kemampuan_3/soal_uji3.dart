@@ -61,68 +61,68 @@ class _SoalUjiKetigaState extends State<SoalUjiKetiga> {
       </p>""",
     ),
     // 2
-    Quiz(
-      statement: r"""
-                 Pada produksi sinar X digunakan beda potensial sebesar 50 kV. 
-                 Jika muatan elektron sebesar \(1,6 \times 10^{-19} C \) dan 
-                 massanya \(9 \times 10^{-31} kg \), 
-                 kelajuan elektron ketika bergerak menuju anode adalah…
+    // Quiz(
+    //   statement: r"""
+    //              Pada produksi sinar X digunakan beda potensial sebesar 50 kV.
+    //              Jika muatan elektron sebesar \(1,6 \times 10^{-19} C \) dan
+    //              massanya \(9 \times 10^{-31} kg \),
+    //              kelajuan elektron ketika bergerak menuju anode adalah…
 
-                    """,
-      options: [
-        QuizOption('a', r"""(A)   \(1,67 \times 10^{-7} m/s \)"""),
-        QuizOption('b', r"""(B)   \(1,67 \times 10^{-17} m/s \)"""),
-        QuizOption('c', r"""(C)   \(1,33 \times 10^{-7} m/s \)"""),
-        QuizOption('d', r"""(D)   \(1,33 \times 10^{-17} m/s \)"""),
-        QuizOption('e', r"""(E)   \(10^{-7} m/s \)"""),
-      ],
-      correctOptionId: 'c',
-      pembahasan: r""" <p>
-        <h4>Pembahasan: </h4> <br>
-        Diketahui:	<br>
-        \(V=50 kV=〖5×10〗^4  V \) <br>
-        \(q_e=1,6×10^{-19}  C \) <br>
-        \(m_e=9×10^{-31} kg \)
-        Ditanya: \(v? \) <br>
-        Jawab: <br>
-        \(v= \sqrt{ \frac{2q_e V}{m_e} } \) <br>
-        \(v= \sqrt{ \frac{2(1,6×10^{-19}  C)(〖5×10〗^4  V)}{9×10^{-31}  kg}}  \) <br>
-        \(v= \sqrt{ \frac{16×10^{-17}}{9×10^{-31}}} = \frac{4}{3}×10^{-7}  \) <br>
-        \(v=1,33×10^{-7} m/s \) <br>
-        Jadi kelajuan elektron adalah \(1,33×10^{-7} m/s. \)
+    //                 """,
+    //   options: [
+    //     QuizOption('a', r"""(A)   \(1,67 \times 10^{-7} m/s \)"""),
+    //     QuizOption('b', r"""(B)   \(1,67 \times 10^{-17} m/s \)"""),
+    //     QuizOption('c', r"""(C)   \(1,33 \times 10^{-7} m/s \)"""),
+    //     QuizOption('d', r"""(D)   \(1,33 \times 10^{-17} m/s \)"""),
+    //     QuizOption('e', r"""(E)   \(10^{-7} m/s \)"""),
+    //   ],
+    //   correctOptionId: 'c',
+    //   pembahasan: r""" <p>
+    //     <h4>Pembahasan: </h4> <br>
+    //     Diketahui:	<br>
+    //     \(V=50 kV=〖5×10〗^4  V \) <br>
+    //     \(q_e=1,6×10^{-19}  C \) <br>
+    //     \(m_e=9×10^{-31} kg \)
+    //     Ditanya: \(v? \) <br>
+    //     Jawab: <br>
+    //     \(v= \sqrt{ \frac{2q_e V}{m_e} } \) <br>
+    //     \(v= \sqrt{ \frac{2(1,6×10^{-19}  C)(〖5×10〗^4  V)}{9×10^{-31}  kg}}  \) <br>
+    //     \(v= \sqrt{ \frac{16×10^{-17}}{9×10^{-31}}} = \frac{4}{3}×10^{-7}  \) <br>
+    //     \(v=1,33×10^{-7} m/s \) <br>
+    //     Jadi kelajuan elektron adalah \(1,33×10^{-7} m/s. \)
 
-      </p>""",
-    ),
-    // 3
-    Quiz(
-      statement: r"""
-                 Panjang gelombang minimum yang dihasilkan tabung sinar X sebesar 0,495 Å. 
-                 Maka besar potensial akselerasi yang dipancarkan oleh tabung adalah…
-                (\(h=6,6 \times 10^{-34} Js \), \(c=3 \times 10^{8} m/s \) , 
-                dan \(e = 1,6 \times 10^{-19} C \))
+    //   </p>""",
+    // ),
+    // // 3
+    // Quiz(
+    //   statement: r"""
+    //              Panjang gelombang minimum yang dihasilkan tabung sinar X sebesar 0,495 Å.
+    //              Maka besar potensial akselerasi yang dipancarkan oleh tabung adalah…
+    //             (\(h=6,6 \times 10^{-34} Js \), \(c=3 \times 10^{8} m/s \) ,
+    //             dan \(e = 1,6 \times 10^{-19} C \))
 
-                    """,
-      options: [
-        QuizOption('a', r"""(A)   30 kV"""),
-        QuizOption('b', r"""(B)   25 kV"""),
-        QuizOption('c', r"""(C)   20 kV"""),
-        QuizOption('d', r"""(D)   15 kV"""),
-        QuizOption('e', r"""(E)   10 kV"""),
-      ],
-      correctOptionId: 'b',
-      pembahasan: r""" <p>
-        <h4>Pembahasan: </h4> <br>
-        Diketahui:	<br>
-        \(λ_min=495×10^{-13} m \) <br>
-        Ditanya: \(V_0  ? \) <br>
-        Jawab: <br>
-        \(λ_min= \frac{12,42×10^{-7} J}{V_0}  \) <br>
-        \(V_0= \frac{12,42×10^{-7} J}{λ_min} = \frac{12,42×10^{-7} J}{495×10^{-13} m } \) <br>
-        \(V_0=25 kV  \) <br>
-        Jadi besar potensial akselerasi yang dipancarkan oleh tabung adalah \(25 kV \)
+    //                 """,
+    //   options: [
+    //     QuizOption('a', r"""(A)   30 kV"""),
+    //     QuizOption('b', r"""(B)   25 kV"""),
+    //     QuizOption('c', r"""(C)   20 kV"""),
+    //     QuizOption('d', r"""(D)   15 kV"""),
+    //     QuizOption('e', r"""(E)   10 kV"""),
+    //   ],
+    //   correctOptionId: 'b',
+    //   pembahasan: r""" <p>
+    //     <h4>Pembahasan: </h4> <br>
+    //     Diketahui:	<br>
+    //     \(λ_min=495×10^{-13} m \) <br>
+    //     Ditanya: \(V_0  ? \) <br>
+    //     Jawab: <br>
+    //     \(λ_min= \frac{12,42×10^{-7} J}{V_0}  \) <br>
+    //     \(V_0= \frac{12,42×10^{-7} J}{λ_min} = \frac{12,42×10^{-7} J}{495×10^{-13} m } \) <br>
+    //     \(V_0=25 kV  \) <br>
+    //     Jadi besar potensial akselerasi yang dipancarkan oleh tabung adalah \(25 kV \)
 
-      </p>""",
-    ),
+    //   </p>""",
+    // ),
 
     Quiz(
       statement: r"""
@@ -160,74 +160,72 @@ class _SoalUjiKetigaState extends State<SoalUjiKetiga> {
       </p>""",
     ),
     // soal no 5
-    Quiz(
-      statement: r"""
-                 Sebuah foton hambur memiliki sudut hambur \(53^o \) dan panjang 
-                 gelombang 0,54 nm. Jika cos \(53^o \) adalah 3/5 dan tetapan 
-                 \(6,6 \times 10^{-34} Js \), panjang gelombang foton yang datang adalah…
+    // Quiz(
+    //   statement: r"""
+    //              Sebuah foton hambur memiliki sudut hambur \(53^o \) dan panjang
+    //              gelombang 0,54 nm. Jika cos \(53^o \) adalah 3/5 dan tetapan
+    //              \(6,6 \times 10^{-34} Js \), panjang gelombang foton yang datang adalah…
 
+    //                 """,
+    //   options: [
+    //     QuizOption('a', r"""(A)   \(1,727 \times 10^{-19} m \)"""),
+    //     QuizOption('b', r"""(B)   \(5,4906 \times 10^{-19} m \)"""),
+    //     QuizOption('c', r"""(C)   \(5,4048 \times 10^{-10} m \)"""),
+    //     QuizOption('d', r"""(D)   \(5,3903 \times 10^{-10} m \)"""),
+    //     QuizOption('e', r"""(E)   \(5,3903 \times 10^{-11} m \)"""),
+    //   ],
+    //   correctOptionId: 'd',
+    //   pembahasan: r"""<p>
+    //     <h4>Pembahasan: </h4> <br>
+    //     Diketahui:
+    //     \(θ=53^o;cos⁡〖53^o 〗= \frac{3}{5} \) <br>
+    //     \(m_e=9,1×10^{-31}  kg \) <br>
+    //     \(h=6,6×10^{-34}  Js \) <br>
+    //     \(λ^'=0,54 nm \) <br>
+    //     Ditanya: \(λ? \) <br>
+    //     Jawab: <br>
+    //     \( λ^{'}-λ=   \frac{h}{m_e  c}(1-cos⁡θ) \) <br>
+    //     \(Δλ= \frac{6,6×10^{-34}  Js}{(9,1×10^{-31}  kg)×(3×10^8  m⁄s)} (1-cos⁡〖53^o 〗) \) <br>
 
-                    """,
-      options: [
-        QuizOption('a', r"""(A)   \(1,727 \times 10^{-19} m \)"""),
-        QuizOption('b', r"""(B)   \(5,4906 \times 10^{-19} m \)"""),
-        QuizOption('c', r"""(C)   \(5,4048 \times 10^{-10} m \)"""),
-        QuizOption('d', r"""(D)   \(5,3903 \times 10^{-10} m \)"""),
-        QuizOption('e', r"""(E)   \(5,3903 \times 10^{-11} m \)"""),
-      ],
-      correctOptionId: 'd',
-      pembahasan: r"""<p> 
-        <h4>Pembahasan: </h4> <br>
-        Diketahui:	
-        \(θ=53^o;cos⁡〖53^o 〗= \frac{3}{5} \) <br>
-        \(m_e=9,1×10^{-31}  kg \) <br>
-        \(h=6,6×10^{-34}  Js \) <br>
-        \(λ^'=0,54 nm \) <br>
-        Ditanya: \(λ? \) <br>
-        Jawab: <br>
-        \( λ^{'}-λ=   \frac{h}{m_e  c}(1-cos⁡θ) \) <br>
-        \(Δλ= \frac{6,6×10^{-34}  Js}{(9,1×10^{-31}  kg)×(3×10^8  m⁄s)} (1-cos⁡〖53^o 〗) \) <br>
+    //     \(Δλ= \frac{6,6×10^{-11}}{9,1×3} (1-\frac{3}{5}) = \frac{2,2×10^{-11}}{9,1} (\frac{2}{5}) \) <br>
+    //     \(Δλ=0,0967×10^{-11}  m \) <br>
+    //     \(λ=λ^{'}-Δλ= (54-0,0967) 10^{-11} \) <br>
+    //     \(λ=53,9033×10^{-11}=5,3903×10^{-10}  m \) <br>
+    //     Jadi panjang gelombang foton yang datang adalah \(5,3903×10^{-10}  m. \)
 
-        \(Δλ= \frac{6,6×10^{-11}}{9,1×3} (1-\frac{3}{5}) = \frac{2,2×10^{-11}}{9,1} (\frac{2}{5}) \) <br>
-        \(Δλ=0,0967×10^{-11}  m \) <br>
-        \(λ=λ^{'}-Δλ= (54-0,0967) 10^{-11} \) <br>
-        \(λ=53,9033×10^{-11}=5,3903×10^{-10}  m \) <br>
-        Jadi panjang gelombang foton yang datang adalah \(5,3903×10^{-10}  m. \)
+    //   </p>""",
+    // ),
+    // // soal no 6
+    // Quiz(
+    //   statement: r"""
+    //              Sebuah foton dengan panjang gelombang  menumbuk elektron diam sehingga
+    //              panjang gelombang foton hambur menjadi 4 .
+    //              Tentukan perbandingan momentum yang dimiliki
+    //              foton tersebut sebelum dan sesudah menumbuk elektron!
 
-      </p>""",
-    ),
-    // soal no 6
-    Quiz(
-      statement: r"""
-                 Sebuah foton dengan panjang gelombang  menumbuk elektron diam sehingga 
-                 panjang gelombang foton hambur menjadi 4 . 
-                 Tentukan perbandingan momentum yang dimiliki 
-                 foton tersebut sebelum dan sesudah menumbuk elektron!
+    //                 """,
+    //   options: [
+    //     QuizOption('a', r"""(A)   1 : 2 """),
+    //     QuizOption('b', r"""(B)   1 : 4"""),
+    //     QuizOption('c', r"""(C)   2 : 1"""),
+    //     QuizOption('d', r"""(D)   4 : 1"""),
+    //     QuizOption('e', r"""(E)   1 : 8"""),
+    //   ],
+    //   correctOptionId: 'd',
+    //   pembahasan: r"""<p>
+    //     <h4>Pembahasan:</h4> <br>
+    //     Diketahui:	<br>
+    //     \(λ=λ \) <br>
+    //     \(λ^{'}= 4λ \) <br>
+    //     Ditanya: \(p? \) <br>
+    //     Jawab: <br>
+    //     \( p= \frac{h v}{c} = \frac{h}{λ}  \) <br>
+    //     \( \frac{p}{p^{'}} = \frac{\frac{h}{λ}}{\frac{h}/{λ^{'}} }= \frac{λ^{'}}{λ}  \)<br>
+    //     \( \frac{p}{p^{'}} = \frac{4λ}{λ}=4∶1 \) <br>
+    //     Jadi perbandingan momentum yang dimiliki foton tersebut sebelum dan sesudah menumbuk elektron adalah 4 : 1.
 
-
-                    """,
-      options: [
-        QuizOption('a', r"""(A)   1 : 2 """),
-        QuizOption('b', r"""(B)   1 : 4"""),
-        QuizOption('c', r"""(C)   2 : 1"""),
-        QuizOption('d', r"""(D)   4 : 1"""),
-        QuizOption('e', r"""(E)   1 : 8"""),
-      ],
-      correctOptionId: 'd',
-      pembahasan: r"""<p>
-        <h4>Pembahasan:</h4> <br>
-        Diketahui:	<br>
-        \(λ=λ \) <br>
-        \(λ^{'}= 4λ \) <br>
-        Ditanya: \(p? \) <br>
-        Jawab: <br>
-        \( p= \frac{h v}{c} = \frac{h}{λ}  \) <br> 
-        \( \frac{p}{p^{'}} = \frac{\frac{h}{λ}}{\frac{h}/{λ^{'}} }= \frac{λ^{'}}{λ}  \)<br>
-        \( \frac{p}{p^{'}} = \frac{4λ}{λ}=4∶1 \) <br>
-        Jadi perbandingan momentum yang dimiliki foton tersebut sebelum dan sesudah menumbuk elektron adalah 4 : 1.
-
-    </p>""",
-    ),
+    // </p>""",
+    // ),
     // 7
     Quiz(
       statement: r"""
@@ -297,37 +295,36 @@ class _SoalUjiKetigaState extends State<SoalUjiKetiga> {
     ),
 
     // 9
-    Quiz(
-        statement: r"""
-                 Sebuah foton hambur memiliki panjang gelombang 40 Å setelah 
-                 menumbuk elektron. Jika foton hambur membentuk sudut \(60^o \) dari 
-                 lintasan awalnya maka panjang gelombang foton sebelum tumbukan adalah…
+    // Quiz(
+    //     statement: r"""
+    //              Sebuah foton hambur memiliki panjang gelombang 40 Å setelah
+    //              menumbuk elektron. Jika foton hambur membentuk sudut \(60^o \) dari
+    //              lintasan awalnya maka panjang gelombang foton sebelum tumbukan adalah…
 
+    //                 """,
+    //     options: [
+    //       QuizOption('a', r"""(A)  49,998 Å  """),
+    //       QuizOption('b', r"""(B)   50,012 Å  """),
+    //       QuizOption('c', r"""(C)   50,112 Å  """),
+    //       QuizOption('d', r"""(D)   49,988 Å """),
+    //       QuizOption('e', r"""(E)   48,988 Å """),
+    //     ],
+    //     correctOptionId: 'd',
+    //     pembahasan: r"""<p>
+    //   <h4>Pembahasan: </h4> <br>
+    //   Diketahui:	<br>
+    //   \(λ=50 Å \) <br>
+    //   \(θ=60^o \) <br>
+    //   Ditanya: p'? <br>
+    //   Jawab: <br>
+    //   \( λ^{'}-λ= \frac{h}{m_0 c}(1-cos⁡θ) \) <br>
+    //   \(Δλ= \frac{(6,6×10^{-34} Js)}{(9,1×10^{-31}  kg)×(3×10^8  m⁄s) }(1-cos⁡〖60^o 〗) \)<br>
+    //   \(Δλ= \frac{6,6×10^(-11)}{9,1×3} (1- \frac{1}{2}) = \frac{2,2×10^{-11}}{9,1} (\frac{1}{2}) \) <br>
+    //   \(Δλ=0,0121 Å \) <br>
+    //   λ=λ^'-Δλ= \(50-0,012=49,988 Å  \) <br>
+    //   Jadi panjang gelombang foton sebelum tumbukan adalah \(49,988 Å. \)
 
-                    """,
-        options: [
-          QuizOption('a', r"""(A)  49,998 Å  """),
-          QuizOption('b', r"""(B)   50,012 Å  """),
-          QuizOption('c', r"""(C)   50,112 Å  """),
-          QuizOption('d', r"""(D)   49,988 Å """),
-          QuizOption('e', r"""(E)   48,988 Å """),
-        ],
-        correctOptionId: 'd',
-        pembahasan: r"""<p>
-      <h4>Pembahasan: </h4> <br>
-      Diketahui:	<br>
-      \(λ=50 Å \) <br>
-      \(θ=60^o \) <br>
-      Ditanya: p'? <br>
-      Jawab: <br>
-      \( λ^{'}-λ= \frac{h}{m_0 c}(1-cos⁡θ) \) <br>
-      \(Δλ= \frac{(6,6×10^{-34} Js)}{(9,1×10^{-31}  kg)×(3×10^8  m⁄s) }(1-cos⁡〖60^o 〗) \)<br>
-      \(Δλ= \frac{6,6×10^(-11)}{9,1×3} (1- \frac{1}{2}) = \frac{2,2×10^{-11}}{9,1} (\frac{1}{2}) \) <br>
-      \(Δλ=0,0121 Å \) <br>
-      λ=λ^'-Δλ= \(50-0,012=49,988 Å  \) <br>
-      Jadi panjang gelombang foton sebelum tumbukan adalah \(49,988 Å. \)
-
-    </p>"""),
+    // </p>"""),
     Quiz(
       statement: r"""
                 Jika elektron dan foton memiliki panjang gelombang yang sama, 
@@ -409,22 +406,24 @@ class _SoalUjiKetigaState extends State<SoalUjiKetiga> {
                   height: 20,
                 ),
                 TeXView(
-                  loadingWidgetBuilder: (BuildContext context) => SizedBox(
-                      height: MediaQuery.of(context).size.width * 0.8,
-                      child: Center(child: CircularProgressIndicator())),
+                  renderingEngine: const TeXViewRenderingEngine.mathjax(),
+
+                  // loadingWidgetBuilder: (BuildContext context) => SizedBox(
+                  //     height: MediaQuery.of(context).size.width * 0.8,
+                  //     child: Center(child: CircularProgressIndicator())),
                   fonts: const [
                     TeXViewFont(
                         fontFamily: 'roboto',
                         src: 'assets/font/Roboto-Black.ttf')
                   ],
-                  renderingEngine: widget.renderingEngine,
+                  // renderingEngine: widget.renderingEngine,
                   child: TeXViewColumn(
                     children: [
                       TeXViewDocument(
                         quizList[currentQuizIndex].statement,
                         style: TeXViewStyle(
                           fontStyle: TeXViewFontStyle(fontFamily: "roboto"),
-                          textAlign: TeXViewTextAlign.Justify,
+                          textAlign: TeXViewTextAlign.justify,
                         ),
                       ),
                       TeXViewGroup(
@@ -463,7 +462,7 @@ class _SoalUjiKetigaState extends State<SoalUjiKetiga> {
                     border: TeXViewBorder.all(
                       TeXViewBorderDecoration(
                           borderColor: Colors.blue,
-                          borderStyle: TeXViewBorderStyle.Solid,
+                          borderStyle: TeXViewBorderStyle.solid,
                           borderWidth: 5),
                     ),
                     backgroundColor: Colors.white,
@@ -515,7 +514,7 @@ class _SoalUjiKetigaState extends State<SoalUjiKetiga> {
                             currentQuizIndex++;
                           }
 
-                          if (jawab.length == 10) {
+                          if (jawab.length == 5) {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
@@ -533,7 +532,7 @@ class _SoalUjiKetigaState extends State<SoalUjiKetiga> {
                           // print(currentQuizIndex);
                         }),
                         child: Text(
-                            currentQuizIndex == 9 ? "Selesai" : "Berikutnya"),
+                            currentQuizIndex == 4 ? "Selesai" : "Berikutnya"),
                       ),
                     ),
                   ],

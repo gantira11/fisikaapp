@@ -63,65 +63,65 @@ class _SoalUjiKeduaState extends State<SoalUjiKedua> {
        </p>""",
     ),
     // 2
-    Quiz(
-      statement: r"""
-                  Frekuensi kerja sebuah logam adalah \(5 \times 10^{14} Hz \), 
-                  ketika diberi cahaya berfrekuensi \(8 \times 10^{14} Hz \). 
-                  Maka besar energi kinetik elektron yang keluar dari logam tersebut adalah…
-                    """,
-      options: [
-        QuizOption('a', r"""(A)   \(3,989 \times 10^{-19} Joule \)"""),
-        QuizOption('b', r"""(B)   \(2,989 \times 10^{-19} Joule \)"""),
-        QuizOption('c', r"""(C)   \(1,989 \times 10^{-19} Joule \)"""),
-        QuizOption('d', r"""(D)   \(4,969 \times 10^{-19} Joule \)"""),
-        QuizOption('e', r"""(E)   \(5,909 \times 10^{-19} Joule \)"""),
-      ],
-      correctOptionId: 'c',
-      pembahasan: r""" <p>
-          <h4>Pembahasan: </h4> <br>
-          Diketahui:	<br>
-          \(v_0=5×10^{14} Hz \) <br>
-          \(v=8×10^{14} Hz \) <br>
-          Ditanya: \(E_k? \) <br>
-          Jawab: <br>
-          \(E_k=E-W \) <br>
-          \(E_k=h(v-v_0) \) <br>
-          \(E_k=6,63×10^{-34} (8-5) 10^{14}  \) <br>
-          \(E_k=1,989×10^{-19} J \) <br>
-          Jadi energi kinetik elektron yang keluar adalah \(1,989×10^{-19} Joule. \)
+    // Quiz(
+    //   statement: r"""
+    //               Frekuensi kerja sebuah logam adalah \(5 \times 10^{14} Hz \),
+    //               ketika diberi cahaya berfrekuensi \(8 \times 10^{14} Hz \).
+    //               Maka besar energi kinetik elektron yang keluar dari logam tersebut adalah…
+    //                 """,
+    //   options: [
+    //     QuizOption('a', r"""(A)   \(3,989 \times 10^{-19} Joule \)"""),
+    //     QuizOption('b', r"""(B)   \(2,989 \times 10^{-19} Joule \)"""),
+    //     QuizOption('c', r"""(C)   \(1,989 \times 10^{-19} Joule \)"""),
+    //     QuizOption('d', r"""(D)   \(4,969 \times 10^{-19} Joule \)"""),
+    //     QuizOption('e', r"""(E)   \(5,909 \times 10^{-19} Joule \)"""),
+    //   ],
+    //   correctOptionId: 'c',
+    //   pembahasan: r""" <p>
+    //       <h4>Pembahasan: </h4> <br>
+    //       Diketahui:	<br>
+    //       \(v_0=5×10^{14} Hz \) <br>
+    //       \(v=8×10^{14} Hz \) <br>
+    //       Ditanya: \(E_k? \) <br>
+    //       Jawab: <br>
+    //       \(E_k=E-W \) <br>
+    //       \(E_k=h(v-v_0) \) <br>
+    //       \(E_k=6,63×10^{-34} (8-5) 10^{14}  \) <br>
+    //       \(E_k=1,989×10^{-19} J \) <br>
+    //       Jadi energi kinetik elektron yang keluar adalah \(1,989×10^{-19} Joule. \)
 
-      </p>""",
-    ),
-    // 3
-    Quiz(
-        statement: r"""
-                  Energi kinetik elektron yang keluar dari logam ketika diberi 
-                  cahaya berenergi \(3,3 \times 10^{-19} Joule \) adalah \(1,5 \times 10^{-19} Joule \). 
-                  Maka besar energi ambang logam tersebut adalah…
+    //   </p>""",
+    // ),
+    // // 3
+    // Quiz(
+    //     statement: r"""
+    //               Energi kinetik elektron yang keluar dari logam ketika diberi
+    //               cahaya berenergi \(3,3 \times 10^{-19} Joule \) adalah \(1,5 \times 10^{-19} Joule \).
+    //               Maka besar energi ambang logam tersebut adalah…
 
-                    """,
-        options: [
-          QuizOption('a', r"""(A)   \(1,8 \times 10^{-19} Joule \)"""),
-          QuizOption('b', r"""(B)   \(2,8 \times 10^{-19} Joule \)"""),
-          QuizOption('c', r"""(C)   \(3,8 \times 10^{-19} Joule \)"""),
-          QuizOption('d', r"""(D)   \(4,8 \times 10^{-19} Joule \)"""),
-          QuizOption('e', r"""(E)   \(5,8 \times 10^{-19} Joule \)"""),
-        ],
-        correctOptionId: 'a',
-        pembahasan: r"""<p>
-          <h4>Pembahasan: </h4> <br>
-          Diketahui:	<br>
-          \(E=3,3×10^{-19} J \) <br>
-          \(E_k=1,5×10^{19} J \) <br>
-          Ditanya: \(W? \) <br>
-          Jawab: <br>
-          \(E_k=E-W\) sehingga  \(W=E-E_k \) <br>
-          \(W=(3,3-1,5) 10^{-19} \) <br> 
-          \(W=1,8×10^{-19} J \) <br>
-          Jadi besar energi ambang logam tersebut adalah \(1,8×10^{-19} Joule. \)
+    //                 """,
+    //     options: [
+    //       QuizOption('a', r"""(A)   \(1,8 \times 10^{-19} Joule \)"""),
+    //       QuizOption('b', r"""(B)   \(2,8 \times 10^{-19} Joule \)"""),
+    //       QuizOption('c', r"""(C)   \(3,8 \times 10^{-19} Joule \)"""),
+    //       QuizOption('d', r"""(D)   \(4,8 \times 10^{-19} Joule \)"""),
+    //       QuizOption('e', r"""(E)   \(5,8 \times 10^{-19} Joule \)"""),
+    //     ],
+    //     correctOptionId: 'a',
+    //     pembahasan: r"""<p>
+    //       <h4>Pembahasan: </h4> <br>
+    //       Diketahui:	<br>
+    //       \(E=3,3×10^{-19} J \) <br>
+    //       \(E_k=1,5×10^{19} J \) <br>
+    //       Ditanya: \(W? \) <br>
+    //       Jawab: <br>
+    //       \(E_k=E-W\) sehingga  \(W=E-E_k \) <br>
+    //       \(W=(3,3-1,5) 10^{-19} \) <br>
+    //       \(W=1,8×10^{-19} J \) <br>
+    //       Jadi besar energi ambang logam tersebut adalah \(1,8×10^{-19} Joule. \)
 
-      </p>"""),
-    //4
+    //   </p>"""),
+    // //4
     Quiz(
       statement: r"""
                   Jika sinar ungu frekuensi \(10^6 Hz \) dijatuhkan pada permukaan 
@@ -190,99 +190,99 @@ class _SoalUjiKeduaState extends State<SoalUjiKedua> {
       </p>""",
     ),
     // no 6
-    Quiz(
-      statement: r"""
-                  Frekuensi ambang suatu logam adalah \(1,5 \times 10^{16} Hz \). 
-                  Apabila logam tersebut disinari dengan cahaya yang mempunyai 
-                  frekuensi \(2 \times 10^{16} Hz \), \(h=6,63 \times 10^{-34} Js\), 
-                  dan \(1 eV = 1,6 \times 10^{-19} J \), 
-                  maka besarnya energi kinetik elektron yang terlepas dari 
-                  permukaan logam tersebut adalah…
+    // Quiz(
+    //   statement: r"""
+    //               Frekuensi ambang suatu logam adalah \(1,5 \times 10^{16} Hz \).
+    //               Apabila logam tersebut disinari dengan cahaya yang mempunyai
+    //               frekuensi \(2 \times 10^{16} Hz \), \(h=6,63 \times 10^{-34} Js\),
+    //               dan \(1 eV = 1,6 \times 10^{-19} J \),
+    //               maka besarnya energi kinetik elektron yang terlepas dari
+    //               permukaan logam tersebut adalah…
 
-                    """,
-      options: [
-        QuizOption('a', r"""(A)   41,2 eV """),
-        QuizOption('b', r"""(B)   29,6 eV """),
-        QuizOption('c', r"""(C)   13,6 eV """),
-        QuizOption('d', r"""(D)   20,7 eV """),
-        QuizOption('e', r"""(E)   5,20 eV """),
-      ],
-      correctOptionId: 'd',
-      pembahasan: r""" <p>
-        <h4>Pembahasan: </h4> <br> 
-        Diketahui:	<br>
-        \(v_0=1,5×10^{16} Hz \) <br>
-        \(v=2×10^{16} Hz \) <br>
-        \(1 eV=1,6×10^{-19} J \) <br>
-        Ditanya: \(E_k?\) <br>
-        Jawab:<br>
-        \(E_k=h(v-v_0)  \) <br>
-        \(E_k=6,63×10^{-34}×(2-1,5) 10^{16}  \) <br>
-        \(E_k=3,315×10^{-18} J \) <br>
-        \(E_k= \frac{3,315×10^{-18}}{1,6×10^{-19}} eV=20,7 eV \) <br>
-        Jadi besarnya energi kinetik elektron yang terlepas dari permukaan logam tersebut adalah \(20,7 eV. \)
+    //                 """,
+    //   options: [
+    //     QuizOption('a', r"""(A)   41,2 eV """),
+    //     QuizOption('b', r"""(B)   29,6 eV """),
+    //     QuizOption('c', r"""(C)   13,6 eV """),
+    //     QuizOption('d', r"""(D)   20,7 eV """),
+    //     QuizOption('e', r"""(E)   5,20 eV """),
+    //   ],
+    //   correctOptionId: 'd',
+    //   pembahasan: r""" <p>
+    //     <h4>Pembahasan: </h4> <br>
+    //     Diketahui:	<br>
+    //     \(v_0=1,5×10^{16} Hz \) <br>
+    //     \(v=2×10^{16} Hz \) <br>
+    //     \(1 eV=1,6×10^{-19} J \) <br>
+    //     Ditanya: \(E_k?\) <br>
+    //     Jawab:<br>
+    //     \(E_k=h(v-v_0)  \) <br>
+    //     \(E_k=6,63×10^{-34}×(2-1,5) 10^{16}  \) <br>
+    //     \(E_k=3,315×10^{-18} J \) <br>
+    //     \(E_k= \frac{3,315×10^{-18}}{1,6×10^{-19}} eV=20,7 eV \) <br>
+    //     Jadi besarnya energi kinetik elektron yang terlepas dari permukaan logam tersebut adalah \(20,7 eV. \)
 
-      </p>""",
-    ),
+    //   </p>""",
+    // ),
 
-    // no 7
-    Quiz(
-        statement: r"""
-                  Sebuah partikel elektron bermassa \(9 \times 10^{-31} kg \) bergerak dengan 
-                  laju \(1,5 \times 10^6 m/s \). Jika konstanta Planck = \(6,63 \times 10^{-34} Js \), 
-                  panjang gelombang de Broglie elektron adalah…
-                    """,
-        options: [
-          QuizOption('a', r"""(A)   \(3,21 \times 10^{-10} \) m """),
-          QuizOption('b', r"""(B)   \(4,91 \times 10^{-10} \) m """),
-          QuizOption('c', r"""(C)   \(5,01 \times 10^{-10} \) m """),
-          QuizOption('d', r"""(D)   \(6,61 \times 10^{-10} \) m """),
-          QuizOption('e', r"""(E)   \(8,21 \times 10^{-10} \) m """),
-        ],
-        correctOptionId: 'b',
-        pembahasan: r"""<p> 
-        <h4>Pembahasan: </h4> <br>
-        Diketahui:	<br>
-        \(m=9×10^{-31}kg \) <br>
-        \(v=1,5×10^{6} m/s \) <br>
-        \(h=6,63×10^{-34} Js \) <br>
-        Ditanya: \(λ? \) <br>
-        Jawab: <br>
-        \(λ=h/(m x v)  \) <br>
-        \(λ= \frac{6,63×10^{-34} Js}{(9×10^{-31} kg)(1,5×10^6  m⁄s)} =4,91×10^{-10} m  \)<br>
-        Jadi panjang gelombang de Broglie elektron tersebut adalah \(4,91×10^{-10} m. \)
+    // // no 7
+    // Quiz(
+    //     statement: r"""
+    //               Sebuah partikel elektron bermassa \(9 \times 10^{-31} kg \) bergerak dengan
+    //               laju \(1,5 \times 10^6 m/s \). Jika konstanta Planck = \(6,63 \times 10^{-34} Js \),
+    //               panjang gelombang de Broglie elektron adalah…
+    //                 """,
+    //     options: [
+    //       QuizOption('a', r"""(A)   \(3,21 \times 10^{-10} \) m """),
+    //       QuizOption('b', r"""(B)   \(4,91 \times 10^{-10} \) m """),
+    //       QuizOption('c', r"""(C)   \(5,01 \times 10^{-10} \) m """),
+    //       QuizOption('d', r"""(D)   \(6,61 \times 10^{-10} \) m """),
+    //       QuizOption('e', r"""(E)   \(8,21 \times 10^{-10} \) m """),
+    //     ],
+    //     correctOptionId: 'b',
+    //     pembahasan: r"""<p>
+    //     <h4>Pembahasan: </h4> <br>
+    //     Diketahui:	<br>
+    //     \(m=9×10^{-31}kg \) <br>
+    //     \(v=1,5×10^{6} m/s \) <br>
+    //     \(h=6,63×10^{-34} Js \) <br>
+    //     Ditanya: \(λ? \) <br>
+    //     Jawab: <br>
+    //     \(λ=h/(m x v)  \) <br>
+    //     \(λ= \frac{6,63×10^{-34} Js}{(9×10^{-31} kg)(1,5×10^6  m⁄s)} =4,91×10^{-10} m  \)<br>
+    //     Jadi panjang gelombang de Broglie elektron tersebut adalah \(4,91×10^{-10} m. \)
 
-      </p>"""),
-    Quiz(
-      statement: r"""
-                  Sebuah partikel elektron bermassa \(9 \times 10^{31} kg \) dipercepat 
-                  melalui beda potensial 100 volt mempunyai laju \(5,93 \times 10^6 m/s \). 
-                  Jika konstanta Planck = \(6,63 \times 10^{-34} Js \), maka panjang 
-                  gelombang de Broglie elektron adalah…
+    //   </p>"""),
+    // Quiz(
+    //   statement: r"""
+    //               Sebuah partikel elektron bermassa \(9 \times 10^{31} kg \) dipercepat
+    //               melalui beda potensial 100 volt mempunyai laju \(5,93 \times 10^6 m/s \).
+    //               Jika konstanta Planck = \(6,63 \times 10^{-34} Js \), maka panjang
+    //               gelombang de Broglie elektron adalah…
 
-                    """,
-      options: [
-        QuizOption('a', r"""(A)   \(1,23 \times 10^{-4} \) m """),
-        QuizOption('b', r"""(B)   \(1,23 \times 10^{-6} \) m """),
-        QuizOption('c', r"""(C)   \(1,23 \times 10^{-7} \) m """),
-        QuizOption('d', r"""(D)   \(1,23 \times 10^{-8} \) m """),
-        QuizOption('e', r"""(E)   \(1,23 \times 10^{-10} \) m """),
-      ],
-      correctOptionId: 'e',
-      pembahasan: r"""<p> 
-        <h4>Pembahasan: </h4> <br>
-        Diketahui:	<br>
-        \(v=5,93×10^6 m/s \)<br>
-        \(m=9×10^{-31}kg \)<br>
-        Ditanya: \(λ? \)<br>
-        Jawab:<br>
-        \(λ= \frac{h}{m×v} \)<br>
-        \(λ= \frac{6,63×10^{-34} Js}{(9×10^{-31} kg)(5,93×10^6  m⁄s)}  \) <br>
-        \(λ=1,23×10^{-10} m\ \)<br>
-        Jadi panjang gelombang de Broglie elektron tersebut adalah  \(1,23×10^{-10} m. \)
+    //                 """,
+    //   options: [
+    //     QuizOption('a', r"""(A)   \(1,23 \times 10^{-4} \) m """),
+    //     QuizOption('b', r"""(B)   \(1,23 \times 10^{-6} \) m """),
+    //     QuizOption('c', r"""(C)   \(1,23 \times 10^{-7} \) m """),
+    //     QuizOption('d', r"""(D)   \(1,23 \times 10^{-8} \) m """),
+    //     QuizOption('e', r"""(E)   \(1,23 \times 10^{-10} \) m """),
+    //   ],
+    //   correctOptionId: 'e',
+    //   pembahasan: r"""<p>
+    //     <h4>Pembahasan: </h4> <br>
+    //     Diketahui:	<br>
+    //     \(v=5,93×10^6 m/s \)<br>
+    //     \(m=9×10^{-31}kg \)<br>
+    //     Ditanya: \(λ? \)<br>
+    //     Jawab:<br>
+    //     \(λ= \frac{h}{m×v} \)<br>
+    //     \(λ= \frac{6,63×10^{-34} Js}{(9×10^{-31} kg)(5,93×10^6  m⁄s)}  \) <br>
+    //     \(λ=1,23×10^{-10} m\ \)<br>
+    //     Jadi panjang gelombang de Broglie elektron tersebut adalah  \(1,23×10^{-10} m. \)
 
-      </p>""",
-    ),
+    //   </p>""",
+    // ),
     // no 9
     Quiz(
       statement: r"""
@@ -400,15 +400,16 @@ class _SoalUjiKeduaState extends State<SoalUjiKedua> {
                   height: 20,
                 ),
                 TeXView(
-                  loadingWidgetBuilder: (BuildContext context) => SizedBox(
-                      height: MediaQuery.of(context).size.width * 0.8,
-                      child: Center(child: CircularProgressIndicator())),
+                  renderingEngine: const TeXViewRenderingEngine.mathjax(),
+                  // loadingWidgetBuilder: (BuildContext context) => SizedBox(
+                  //     height: MediaQuery.of(context).size.width * 0.8,
+                  //     child: Center(child: CircularProgressIndicator())),
                   fonts: const [
                     TeXViewFont(
                         fontFamily: 'roboto',
                         src: 'assets/font/Roboto-Black.ttf')
                   ],
-                  renderingEngine: widget.renderingEngine,
+                  // renderingEngine: widget.renderingEngine,
                   child: TeXViewColumn(
                     children: [
                       TeXViewImage.asset(
@@ -419,7 +420,7 @@ class _SoalUjiKeduaState extends State<SoalUjiKedua> {
                         quizList[currentQuizIndex].statement,
                         style: TeXViewStyle(
                           fontStyle: TeXViewFontStyle(fontFamily: "roboto"),
-                          textAlign: TeXViewTextAlign.Justify,
+                          textAlign: TeXViewTextAlign.justify,
                         ),
                       ),
                       TeXViewGroup(
@@ -453,21 +454,22 @@ class _SoalUjiKeduaState extends State<SoalUjiKedua> {
                   ),
                   style: TeXViewStyle(
                     margin: TeXViewMargin.all(5),
-                    padding: TeXViewPadding.all(10),
+                    padding: TeXViewPadding.only(
+                        top: 5, left: 10, right: 10, bottom: 30),
                     borderRadius: TeXViewBorderRadius.all(10),
                     border: TeXViewBorder.all(
                       TeXViewBorderDecoration(
                           borderColor: Colors.blue,
-                          borderStyle: TeXViewBorderStyle.Solid,
+                          borderStyle: TeXViewBorderStyle.solid,
                           borderWidth: 5),
                     ),
                     backgroundColor: Colors.white,
                   ),
                 ),
                 Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     SizedBox(
                       width: 150,
@@ -510,7 +512,7 @@ class _SoalUjiKeduaState extends State<SoalUjiKedua> {
                             currentQuizIndex++;
                           }
 
-                          if (jawab.length == 10) {
+                          if (jawab.length == 5) {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
@@ -528,7 +530,7 @@ class _SoalUjiKeduaState extends State<SoalUjiKedua> {
                           // print(currentQuizIndex);
                         }),
                         child: Text(
-                            currentQuizIndex == 9 ? "Selesai" : "Berikutnya"),
+                            currentQuizIndex == 4 ? "Selesai" : "Berikutnya"),
                       ),
                     ),
                   ],

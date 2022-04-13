@@ -58,7 +58,7 @@ class HasilScreen extends StatelessWidget {
               ),
               SizedBox(height: 20),
               Text(
-                jawab.length > 10 ? '${nilai * 10 / 2}' : '${nilai * 10}',
+                jawab.length > 5 ? '${nilai * 10}' : '${nilai * 20}',
                 style: TextStyle(
                   fontSize: 100,
                   foreground: Paint()

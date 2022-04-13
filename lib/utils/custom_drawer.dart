@@ -23,10 +23,34 @@ class _CustomDrawerState extends State<CustomDrawer> {
         // ignore: prefer_const_literals_to_create_immutables
         children: [
           DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.blue[700],
-              ),
-              child: Text("Drawer Header")),
+            decoration: BoxDecoration(
+              color: Colors.blue[700],
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                SizedBox(
+                  width: 5,
+                ),
+                Image.asset(
+                  "assets/images/Lambang-UM.png",
+                  width: 120,
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+                Flexible(
+                  child: Text(
+                    "E-module Konsep dan Fenomena Kuantum",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ],
+            ),
+          ),
           InkWell(
             onTap: () {
               Navigator.pushReplacementNamed(context, MateriScreen.routename);

@@ -49,7 +49,7 @@ class _EfekFotolistrikWidgetState extends State<EfekFotolistrikWidget> {
             delegate: SliverChildListDelegate([
           Padding(
             padding: const EdgeInsets.only(
-                right: 20.0, left: 20.0, top: 20.0, bottom: 10),
+                right: 20.0, left: 20.0, top: 20.0, bottom: 0),
             child: Text(
               "Efek Fotolistrik",
               style:
@@ -57,9 +57,9 @@ class _EfekFotolistrikWidgetState extends State<EfekFotolistrikWidget> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
+            padding: const EdgeInsets.only(left: 20, right: 20, top: 0),
             child: SizedBox(
-              height: MediaQuery.of(context).size.width * 1.2,
+              height: MediaQuery.of(context).size.width * 1.1,
               width: MediaQuery.of(context).size.width * 0.8,
               child: SvgPicture.asset("assets/materi/fotolistrik/1.svg"),
             ),
@@ -70,7 +70,7 @@ class _EfekFotolistrikWidgetState extends State<EfekFotolistrikWidget> {
               height: MediaQuery.of(context).size.width * 0.8,
               width: MediaQuery.of(context).size.width * 0.8,
               child: Image.asset(
-                "assets/materi/fotolistrik/2.png",
+                "assets/materi/fotolistrik/new_fotolistrik1.gif",
                 fit: BoxFit.fill,
               ),
             ),
@@ -89,7 +89,7 @@ class _EfekFotolistrikWidgetState extends State<EfekFotolistrikWidget> {
               height: MediaQuery.of(context).size.width * 0.8,
               width: MediaQuery.of(context).size.width * 0.8,
               child: Image.asset(
-                "assets/materi/fotolistrik/4.png",
+                "assets/materi/fotolistrik/new_fotolistrik2.jpeg",
                 fit: BoxFit.fill,
               ),
             ),

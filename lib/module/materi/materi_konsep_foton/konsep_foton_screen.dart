@@ -47,144 +47,158 @@ class __KonsepFotonWidgetState extends State<_KonsepFotonWidget> {
     return CustomScrollView(
       slivers: [
         SliverList(
-            delegate: SliverChildListDelegate([
-          Padding(
-            padding: const EdgeInsets.only(
-                right: 20.0, left: 20.0, top: 20.0, bottom: 10),
-            child: Text(
-              "Konsep Foton",
-              style:
-                  TextStyle(fontSize: 36, color: CustomColors.darkBlueCustom),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
-            child: SizedBox(
-              height: MediaQuery.of(context).size.width * 0.8,
-              width: MediaQuery.of(context).size.width * 0.8,
-              child: SvgPicture.asset("assets/materi/konsepfoton/1.svg"),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
-            child: SizedBox(
-              height: MediaQuery.of(context).size.width * 0.8,
-              width: MediaQuery.of(context).size.width * 0.8,
-              child: Image.asset("assets/materi/konsepfoton/2.png"),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
-            child: SizedBox(
-              height: MediaQuery.of(context).size.width * 0.4,
-              width: MediaQuery.of(context).size.width * 0.8,
-              child: SvgPicture.asset("assets/materi/konsepfoton/3.svg"),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
-            child: SizedBox(
-              height: MediaQuery.of(context).size.width * 1.2,
-              width: MediaQuery.of(context).size.width * 0.8,
-              child: SvgPicture.asset("assets/materi/konsepfoton/4.svg"),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
-            child: SizedBox(
-              height: MediaQuery.of(context).size.width * 0.8,
-              width: MediaQuery.of(context).size.width * 0.8,
-              child: Image.asset("assets/materi/konsepfoton/5.png"),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
-            child: SizedBox(
-              height: MediaQuery.of(context).size.width * 1.5,
-              width: MediaQuery.of(context).size.width * 0.8,
-              child: SvgPicture.asset("assets/materi/konsepfoton/6.svg"),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
-            child: SizedBox(
-              height: MediaQuery.of(context).size.width * 0.8,
-              width: MediaQuery.of(context).size.width * 0.8,
-              child: Image.asset("assets/materi/konsepfoton/7.png"),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
-            child: SizedBox(
-              height: MediaQuery.of(context).size.width * 0.3,
-              width: MediaQuery.of(context).size.width * 0.8,
-              child: SvgPicture.asset("assets/materi/konsepfoton/8.svg"),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
-            child: SizedBox(
-              height: MediaQuery.of(context).size.width * 0.3,
-              width: MediaQuery.of(context).size.width * 0.8,
-              child: Image.asset(
-                "assets/materi/konsepfoton/9.png",
-                alignment: Alignment.centerLeft,
+          delegate: SliverChildListDelegate(
+            [
+              Padding(
+                padding: const EdgeInsets.only(
+                    right: 20.0, left: 20.0, top: 20.0, bottom: 10),
+                child: Text(
+                  "Konsep Foton",
+                  style: TextStyle(
+                      fontSize: 36, color: CustomColors.darkBlueCustom),
+                ),
               ),
-            ),
+              Padding(
+                padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
+                child: SizedBox(
+                  height: MediaQuery.of(context).size.width * 0.8,
+                  width: MediaQuery.of(context).size.width * 0.8,
+                  child: SvgPicture.asset("assets/materi/konsepfoton/1.svg"),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
+                child: SizedBox(
+                  height: MediaQuery.of(context).size.width * 0.8,
+                  width: MediaQuery.of(context).size.width * 0.8,
+                  child: Image.asset("assets/materi/konsepfoton/2.png"),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
+                child: SizedBox(
+                  height: MediaQuery.of(context).size.width * 0.4,
+                  width: MediaQuery.of(context).size.width * 0.8,
+                  child: SvgPicture.asset("assets/materi/konsepfoton/3.svg"),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
+                child: SizedBox(
+                  height: MediaQuery.of(context).size.width * 1.2,
+                  width: MediaQuery.of(context).size.width * 0.8,
+                  child: SvgPicture.asset("assets/materi/konsepfoton/4.svg"),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
+                child: SizedBox(
+                  height: MediaQuery.of(context).size.width * 0.8,
+                  width: MediaQuery.of(context).size.width * 0.8,
+                  child: Image.asset("assets/materi/konsepfoton/5.png"),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
+                child: SizedBox(
+                  height: MediaQuery.of(context).size.width * 1.5,
+                  width: MediaQuery.of(context).size.width * 0.8,
+                  child: SvgPicture.asset("assets/materi/konsepfoton/6.svg"),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
+                child: SizedBox(
+                  height: MediaQuery.of(context).size.width * 0.8,
+                  width: MediaQuery.of(context).size.width * 0.8,
+                  child: Image.asset("assets/materi/konsepfoton/7.png"),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
+                child: SizedBox(
+                  height: MediaQuery.of(context).size.width * 0.3,
+                  width: MediaQuery.of(context).size.width * 0.8,
+                  child: SvgPicture.asset("assets/materi/konsepfoton/8.svg"),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
+                child: SizedBox(
+                  height: MediaQuery.of(context).size.width * 0.3,
+                  width: MediaQuery.of(context).size.width * 0.8,
+                  child: Image.asset(
+                    "assets/materi/konsepfoton/9.png",
+                    alignment: Alignment.centerLeft,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 20, right: 20, top: 0),
+                child: SizedBox(
+                  height: MediaQuery.of(context).size.width * 1.2,
+                  width: MediaQuery.of(context).size.width * 0.8,
+                  child: SvgPicture.asset("assets/materi/konsepfoton/10.svg"),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
+                child: SizedBox(
+                  height: MediaQuery.of(context).size.width * 0.8,
+                  width: MediaQuery.of(context).size.width * 0.8,
+                  child:
+                      Image.asset("assets/materi/konsepfoton/new_foton1.jpeg"),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 20, right: 20, top: 0),
+                child: SizedBox(
+                  height: MediaQuery.of(context).size.width * 0.3,
+                  width: MediaQuery.of(context).size.width * 0.8,
+                  child: SvgPicture.asset("assets/materi/konsepfoton/12.svg"),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 20, right: 20, top: 0),
+                child: SizedBox(
+                  height: MediaQuery.of(context).size.width * 0.5,
+                  width: MediaQuery.of(context).size.width * 0.8,
+                  child:
+                      Image.asset("assets/materi/konsepfoton/new_foton3.png"),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 20, right: 20, top: 0),
+                child: SizedBox(
+                  height: MediaQuery.of(context).size.width * 0.4,
+                  width: MediaQuery.of(context).size.width * 0.5,
+                  child:
+                      Image.asset("assets/materi/konsepfoton/new_foton2.jpeg"),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 20, right: 20, top: 0),
+                child: SizedBox(
+                  height: MediaQuery.of(context).size.width * 0.8,
+                  width: MediaQuery.of(context).size.width * 0.8,
+                  child: SvgPicture.asset("assets/materi/konsepfoton/14.svg"),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(
+                    left: 20, right: 20, top: 20, bottom: 20),
+                child: SizedBox(
+                  height: MediaQuery.of(context).size.width * 0.4,
+                  width: MediaQuery.of(context).size.width * 0.8,
+                  child: Image.asset("assets/materi/konsepfoton/15.png"),
+                ),
+              ),
+              SizedBox(
+                height: 40,
+              )
+            ],
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 0),
-            child: SizedBox(
-              height: MediaQuery.of(context).size.width * 1.2,
-              width: MediaQuery.of(context).size.width * 0.8,
-              child: SvgPicture.asset("assets/materi/konsepfoton/10.svg"),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
-            child: SizedBox(
-              height: MediaQuery.of(context).size.width * 0.8,
-              width: MediaQuery.of(context).size.width * 0.8,
-              child: Image.asset("assets/materi/konsepfoton/11.png"),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 0),
-            child: SizedBox(
-              height: MediaQuery.of(context).size.width * 0.3,
-              width: MediaQuery.of(context).size.width * 0.8,
-              child: SvgPicture.asset("assets/materi/konsepfoton/12.svg"),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
-            child: SizedBox(
-              height: MediaQuery.of(context).size.width * 0.8,
-              width: MediaQuery.of(context).size.width * 0.8,
-              child: Image.asset("assets/materi/konsepfoton/13.png"),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20, top: 0),
-            child: SizedBox(
-              height: MediaQuery.of(context).size.width * 0.8,
-              width: MediaQuery.of(context).size.width * 0.8,
-              child: SvgPicture.asset("assets/materi/konsepfoton/14.svg"),
-            ),
-          ),
-          Padding(
-            padding:
-                const EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 20),
-            child: SizedBox(
-              height: MediaQuery.of(context).size.width * 0.4,
-              width: MediaQuery.of(context).size.width * 0.8,
-              child: Image.asset("assets/materi/konsepfoton/15.png"),
-            ),
-          ),
-          SizedBox(
-            height: 40,
-          )
-        ]))
+        )
       ],
     );
   }

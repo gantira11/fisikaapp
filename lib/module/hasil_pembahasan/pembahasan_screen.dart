@@ -101,12 +101,13 @@ class _PembahasanScreenState extends State<PembahasanScreen> {
                           height: 20,
                         ),
                         TeXView(
-                          loadingWidgetBuilder: (BuildContext context) =>
-                              SizedBox(
-                                  height:
-                                      MediaQuery.of(context).size.width * 0.8,
-                                  child: Center(
-                                      child: CircularProgressIndicator())),
+                          renderingEngine: TeXViewRenderingEngine.mathjax(),
+
+                          // loadingWidgetBuilder: (BuildContext context) =>
+                          //     SizedBox(
+                          //   height: MediaQuery.of(context).size.width * 0.8,
+                          //   child: Center(child: CircularProgressIndicator()),
+                          // ),
                           fonts: const [
                             TeXViewFont(
                                 fontFamily: 'roboto',
@@ -125,7 +126,7 @@ class _PembahasanScreenState extends State<PembahasanScreen> {
                                 style: TeXViewStyle(
                                     fontStyle:
                                         TeXViewFontStyle(fontFamily: "roboto"),
-                                    textAlign: TeXViewTextAlign.Justify),
+                                    textAlign: TeXViewTextAlign.justify),
                               ),
                               TeXViewGroup(
                                 children: widget
@@ -171,7 +172,7 @@ class _PembahasanScreenState extends State<PembahasanScreen> {
                             border: TeXViewBorder.all(
                               TeXViewBorderDecoration(
                                   borderColor: Colors.blue,
-                                  borderStyle: TeXViewBorderStyle.Solid,
+                                  borderStyle: TeXViewBorderStyle.solid,
                                   borderWidth: 5),
                             ),
                             backgroundColor: Colors.white,
@@ -208,6 +209,7 @@ class _PembahasanScreenState extends State<PembahasanScreen> {
                         Visibility(
                           visible: showPembahasan,
                           child: TeXView(
+                            renderingEngine: TeXViewRenderingEngine.mathjax(),
                             child: TeXViewDocument(
                                 widget.quizList[currentQuizIndex].pembahasan),
                             style: TeXViewStyle(
@@ -217,7 +219,7 @@ class _PembahasanScreenState extends State<PembahasanScreen> {
                               border: TeXViewBorder.all(
                                 TeXViewBorderDecoration(
                                     borderColor: Colors.blue,
-                                    borderStyle: TeXViewBorderStyle.Solid,
+                                    borderStyle: TeXViewBorderStyle.solid,
                                     borderWidth: 5),
                               ),
                               backgroundColor: Colors.white,

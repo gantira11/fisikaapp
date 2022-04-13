@@ -19,9 +19,28 @@ class DashBoardScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text(
-            "Selamat Datang!",
-            style: TextStyle(fontSize: 30),
+          automaticallyImplyLeading: false,
+          title: Center(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Image.asset(
+                  "assets/images/Lambang-UM.png",
+                  width: 120,
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  "E-module\nKonsep dan Fenomena\nKuantum",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      fontSize: 23,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'RobotoMono'),
+                ),
+              ],
+            ),
           ),
           flexibleSpace: SvgPicture.asset(
             assetsName,

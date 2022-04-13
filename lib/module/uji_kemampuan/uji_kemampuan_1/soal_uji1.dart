@@ -33,110 +33,110 @@ class _TextQuizOneState extends State<TextQuizOne> {
 
   List<Quiz> quizList = [
     // no 1
-    Quiz(
-        statement: r"""<h4>Suatu benda mempunyai emisivitas 0,41. 
-            Berapakah intensitas radiasi total benda tersebut pada suhu 400K? (tetapan Stefan-Boltzman 
-            \(σ = {5,67 \times 10^{-8} W/m^2 K^2}\)
-            )</h4>""",
-        options: [
-          QuizOption('a', r""" <h4>(A)   \(6,02 \times 10^2 kJ \)</h4>"""),
-          QuizOption('b', r""" <h4>(B)   \(6,02 \times 10^3 kJ \)</h4>"""),
-          QuizOption('c', r""" <h4>(C)   \(6,02 \times 10^2 J \)</h4>"""),
-          QuizOption('d', r""" <h4>(D)   \(6,02 \times 10^3 J \)</h4>"""),
-          QuizOption('e', r""" <h4>(E)   \(6,02 \times 10^4 J \)</h4>"""),
-        ],
-        correctOptionId: 'c',
-        pembahasan: r"""<p>
-        <h4>Pembahasan: </h4> <br>
-        Diketahui: <br> 
-        \(e = 0,41 \)<br> 
-        \(T = 400 K \)<br>
-        Ditanya: \(R? \) <br> 
-        Jawab: <br>
-        \(R = eσT^4\) <br>
-        \(R=(0,41)×(5,67×10^{-8}  W⁄m^2 k^4 )×(400 K)^4 \) <br>
-        \( R=6,02×10^2 J \) <br>
-        <p> Jadi intensitas radiasi totalnya adalah \(6,02×10^2 Joule \) </p>
+    // Quiz(
+    //     statement: r"""<h4>Suatu benda mempunyai emisivitas 0,41.
+    //         Berapakah intensitas radiasi total benda tersebut pada suhu 400K? (tetapan Stefan-Boltzman
+    //         \(σ = {5,67 \times 10^{-8} W/m^2 K^2}\)
+    //         )</h4>""",
+    //     options: [
+    //       QuizOption('a', r""" <h4>(A)   \(6,02 \times 10^2 kJ \)</h4>"""),
+    //       QuizOption('b', r""" <h4>(B)   \(6,02 \times 10^3 kJ \)</h4>"""),
+    //       QuizOption('c', r""" <h4>(C)   \(6,02 \times 10^2 J \)</h4>"""),
+    //       QuizOption('d', r""" <h4>(D)   \(6,02 \times 10^3 J \)</h4>"""),
+    //       QuizOption('e', r""" <h4>(E)   \(6,02 \times 10^4 J \)</h4>"""),
+    //     ],
+    //     correctOptionId: 'c',
+    //     pembahasan: r"""<p>
+    //     <h4>Pembahasan: </h4> <br>
+    //     Diketahui: <br>
+    //     \(e = 0,41 \)<br>
+    //     \(T = 400 K \)<br>
+    //     Ditanya: \(R? \) <br>
+    //     Jawab: <br>
+    //     \(R = eσT^4\) <br>
+    //     \(R=(0,41)×(5,67×10^{-8}  W⁄m^2 k^4 )×(400 K)^4 \) <br>
+    //     \( R=6,02×10^2 J \) <br>
+    //     <p> Jadi intensitas radiasi totalnya adalah \(6,02×10^2 Joule \) </p>
 
-        <p>"""),
+    //     <p>"""),
 
-    // no 2
-    Quiz(
-        statement:
-            r"""<h4>Sebuah benda hitam mempunyai suhu 2.000 K. Jika konstanta Wien \(C = {2,898 \times 10^{-3} mK}\) 
-            maka rapat energi maksimum yang dipancarkan benda itu terletak pada panjang gelombang \(\lambda \) sebesar…
-            </h4>""",
-        options: [
-          QuizOption('a', r""" <h4>(A)   \(1,4  \mu m \)</h4>"""),
-          QuizOption('b', r""" <h4>(B)   \(2,9  \mu m \)</h4>"""),
-          QuizOption('c', r""" <h4>(C)   \(5,8  \mu m \)</h4>"""),
-          QuizOption('d', r""" <h4>(D)   \(7,3  \mu m \)</h4>"""),
-          QuizOption('e', r""" <h4>(E)   \(112,4  \mu m \)</h4>"""),
-        ],
-        correctOptionId: 'a',
-        pembahasan: r""" <p>
-            <h4>Pembahasan: </h4> <br>
-            Diketahui: <br>	\(T=2.000 K \) <br> \(C=2,898×10^{-3}  m K \) <br>
-            Ditanya: \( λ_m? \) <br>
-            Jawab: <br>
-            \(λ_m  T=C \) <br>
-            \(λ_m= \frac{C}{T} \) <br>
-            \(λ_m= \frac{2,898×10^{-3}  m K}{2.000 K} \) <br> 
-            \(λ_m=1,4×10^{-6}  m=1,4 μm \) <br>
-            Jadi panjang gelombang yang memancarkan energi maksimum adalah \(1,4 μm. \) </p> """),
+    // // no 2
+    // Quiz(
+    //     statement:
+    //         r"""<h4>Sebuah benda hitam mempunyai suhu 2.000 K. Jika konstanta Wien \(C = {2,898 \times 10^{-3} mK}\)
+    //         maka rapat energi maksimum yang dipancarkan benda itu terletak pada panjang gelombang \(\lambda \) sebesar…
+    //         </h4>""",
+    //     options: [
+    //       QuizOption('a', r""" <h4>(A)   \(1,4  \mu m \)</h4>"""),
+    //       QuizOption('b', r""" <h4>(B)   \(2,9  \mu m \)</h4>"""),
+    //       QuizOption('c', r""" <h4>(C)   \(5,8  \mu m \)</h4>"""),
+    //       QuizOption('d', r""" <h4>(D)   \(7,3  \mu m \)</h4>"""),
+    //       QuizOption('e', r""" <h4>(E)   \(112,4  \mu m \)</h4>"""),
+    //     ],
+    //     correctOptionId: 'a',
+    //     pembahasan: r""" <p>
+    //         <h4>Pembahasan: </h4> <br>
+    //         Diketahui: <br>	\(T=2.000 K \) <br> \(C=2,898×10^{-3}  m K \) <br>
+    //         Ditanya: \( λ_m? \) <br>
+    //         Jawab: <br>
+    //         \(λ_m  T=C \) <br>
+    //         \(λ_m= \frac{C}{T} \) <br>
+    //         \(λ_m= \frac{2,898×10^{-3}  m K}{2.000 K} \) <br>
+    //         \(λ_m=1,4×10^{-6}  m=1,4 μm \) <br>
+    //         Jadi panjang gelombang yang memancarkan energi maksimum adalah \(1,4 μm. \) </p> """),
 
-    // no 3
-    Quiz(
-        statement:
-            r"""<h4>Sebuah benda pijar yang terbuat dari baja memancarkan energi 
-            maksimum pada gelombang cahaya 5.000 Å. Suhu sumber cahaya tersebut adalah…
-            </h4>""",
-        options: [
-          QuizOption('a', r""" <h4>(A)   \(5.523^oC \)</h4>"""),
-          QuizOption('b', r""" <h4>(B)   \(6.606^oC \)</h4>"""),
-          QuizOption('c', r""" <h4>(C)   \(8.233^oC \)</h4>"""),
-          QuizOption('d', r""" <h4>(D)   \(9.726^oC \)</h4>"""),
-          QuizOption('e', r""" <h4>(E)   \(1.003^oC \)</h4>"""),
-        ],
-        correctOptionId: 'a',
-        pembahasan: r""" <p>
-          <h4>Pembahasan: </h4> <br>
-          Diketahui:	<br>
-          \(λ_m=5.000 Å \) <br>
-          \(C=2,898×10^{-3}  m K \) <br>
-          Ditanya: \(T? \) <br>
-          Jawab: <br>
-          \(λ_m  T=C \) <br>
-          \(T= \frac{C}{λ}_m \) <br>
-          \(T= \frac{2,898×10^{-3}  m K}{5.000×10^{-10}  m}=5.796 K=〖5.523〗^o C \) <br>
-          Jadi suhu sumber cahaya tersebut adalah \(5.523^oC. \) </p>"""),
+    // // no 3
+    // Quiz(
+    //     statement:
+    //         r"""<h4>Sebuah benda pijar yang terbuat dari baja memancarkan energi
+    //         maksimum pada gelombang cahaya 5.000 Å. Suhu sumber cahaya tersebut adalah…
+    //         </h4>""",
+    //     options: [
+    //       QuizOption('a', r""" <h4>(A)   \(5.523^oC \)</h4>"""),
+    //       QuizOption('b', r""" <h4>(B)   \(6.606^oC \)</h4>"""),
+    //       QuizOption('c', r""" <h4>(C)   \(8.233^oC \)</h4>"""),
+    //       QuizOption('d', r""" <h4>(D)   \(9.726^oC \)</h4>"""),
+    //       QuizOption('e', r""" <h4>(E)   \(1.003^oC \)</h4>"""),
+    //     ],
+    //     correctOptionId: 'a',
+    //     pembahasan: r""" <p>
+    //       <h4>Pembahasan: </h4> <br>
+    //       Diketahui:	<br>
+    //       \(λ_m=5.000 Å \) <br>
+    //       \(C=2,898×10^{-3}  m K \) <br>
+    //       Ditanya: \(T? \) <br>
+    //       Jawab: <br>
+    //       \(λ_m  T=C \) <br>
+    //       \(T= \frac{C}{λ}_m \) <br>
+    //       \(T= \frac{2,898×10^{-3}  m K}{5.000×10^{-10}  m}=5.796 K=〖5.523〗^o C \) <br>
+    //       Jadi suhu sumber cahaya tersebut adalah \(5.523^oC. \) </p>"""),
 
-    //no 4
-    Quiz(
-      statement: r"""<h4>Panjang gelombang pembawa energi radiasi 
-            maksimum suatu benda bersuhu \(25^oC \) adalah… \(C = {2,98 \times 10^{-3} mK}\)
-            </h4>""",
-      options: [
-        QuizOption('a', r""" <h4>(A)   \(10^{-9} m \)</h4>"""),
-        QuizOption('b', r""" <h4>(B)   \(10^{-8} m  \)</h4>"""),
-        QuizOption('c', r""" <h4>(C)   \(10^{-7} m  \)</h4>"""),
-        QuizOption('d', r""" <h4>(D)   \(10^{-6} m \)</h4>"""),
-        QuizOption('e', r""" <h4>(E)   \(10^{-5} m  \)</h4>"""),
-      ],
-      correctOptionId: 'e',
-      pembahasan: r""" <p>
-        <h4>Pembahasan: </h4><br>
-        Diketahui: <br>
-        \(T=25^o \) <br> 
-        \(C=298 K \) <br>
-        \(C=2,98×10^{-3}  m K \) <br>
-        Ditanya:  \(λ_m? \) <br>
-        Jawab: <br>
-        \( λ_m  T=C \) <br>
-        \(λ_m= \frac{C}{T} \) <br>
-        \(λ_m= \frac{2,98×10^{-3}  m K}{298 K}=10^{-5} m \) <br>
-        Jadi panjang gelombang pembawa energi radiasi maksimum materi tersebut adalah \(10^{-5} m.\) </p> """,
-    ),
+    // //no 4
+    // Quiz(
+    //   statement: r"""<h4>Panjang gelombang pembawa energi radiasi
+    //         maksimum suatu benda bersuhu \(25^oC \) adalah… \(C = {2,98 \times 10^{-3} mK}\)
+    //         </h4>""",
+    //   options: [
+    //     QuizOption('a', r""" <h4>(A)   \(10^{-9} m \)</h4>"""),
+    //     QuizOption('b', r""" <h4>(B)   \(10^{-8} m  \)</h4>"""),
+    //     QuizOption('c', r""" <h4>(C)   \(10^{-7} m  \)</h4>"""),
+    //     QuizOption('d', r""" <h4>(D)   \(10^{-6} m \)</h4>"""),
+    //     QuizOption('e', r""" <h4>(E)   \(10^{-5} m  \)</h4>"""),
+    //   ],
+    //   correctOptionId: 'e',
+    //   pembahasan: r""" <p>
+    //     <h4>Pembahasan: </h4><br>
+    //     Diketahui: <br>
+    //     \(T=25^o \) <br>
+    //     \(C=298 K \) <br>
+    //     \(C=2,98×10^{-3}  m K \) <br>
+    //     Ditanya:  \(λ_m? \) <br>
+    //     Jawab: <br>
+    //     \( λ_m  T=C \) <br>
+    //     \(λ_m= \frac{C}{T} \) <br>
+    //     \(λ_m= \frac{2,98×10^{-3}  m K}{298 K}=10^{-5} m \) <br>
+    //     Jadi panjang gelombang pembawa energi radiasi maksimum materi tersebut adalah \(10^{-5} m.\) </p> """,
+    // ),
     //no 5
     Quiz(
       statement:
@@ -157,7 +157,7 @@ class _TextQuizOneState extends State<TextQuizOne> {
         QuizOption(
             'e', r""" <h4>(E)   Warna spektrum ketiga benda sama</h4>"""),
       ],
-      correctOptionId: 'c',
+      correctOptionId: 'd',
       pembahasan: r""" <p>
           <h4>Pembahasan: </h4> <br>
           Diketahui hubungan panjang gelombang A, B, C, dan D adalah \(λ_A>λ_B=λ_C>λ_D. \) <br>
@@ -237,32 +237,32 @@ class _TextQuizOneState extends State<TextQuizOne> {
       """,
     ),
     //no 8
-    Quiz(
-        statement: r"""<h4>Sebuah bintang memiliki suhu permukaan 5.796 K. 
-    Bintang tersebut akan memancarkan spektrum pada panjang gelombang…
-    \(C = 2,898 \times 10^{-2} mK \)
-            </h4>""",
-        options: [
-          QuizOption('a', r""" <h4>(A)   1.250 Å</h4>"""),
-          QuizOption('b', r""" <h4>(B)   2.500 Å</h4>"""),
-          QuizOption('c', r""" <h4>(C)   3.750 Å</h4>"""),
-          QuizOption('d', r""" <h4>(D)   5.000 Å</h4>"""),
-          QuizOption('e', r""" <h4>(E)   6.250 Å</h4>"""),
-        ],
-        correctOptionId: 'd',
-        pembahasan: r""" <p>
-            <h4>Pembahasan: </h4> <br>
-            Diketahui:	<br>
-            \(T=5.796 K \) <br>
-            \(C=2,898×10^{-3}  m K \) <br>
-            Ditanya: \(λ_m? \) <br>
-            Jawab: <br>
-            \(λ_m  T=C \) <br> 
-            \(λ_m=C/T= \frac{2,898×10^{-3}  m K}{5.796 K} \) <br>
-            \(λ_m=5.000×10^{-10}  m=5.000 Å \) <br>
-            Jadi panjang gelombang yang memancarkan intensitas radiasi maksimum adalah \(5.000 Å.\) </p>
-        """),
-    // no 9
+    // Quiz(
+    //     statement: r"""<h4>Sebuah bintang memiliki suhu permukaan 5.796 K.
+    // Bintang tersebut akan memancarkan spektrum pada panjang gelombang…
+    // \(C = 2,898 \times 10^{-2} mK \)
+    //         </h4>""",
+    //     options: [
+    //       QuizOption('a', r""" <h4>(A)   1.250 Å</h4>"""),
+    //       QuizOption('b', r""" <h4>(B)   2.500 Å</h4>"""),
+    //       QuizOption('c', r""" <h4>(C)   3.750 Å</h4>"""),
+    //       QuizOption('d', r""" <h4>(D)   5.000 Å</h4>"""),
+    //       QuizOption('e', r""" <h4>(E)   6.250 Å</h4>"""),
+    //     ],
+    //     correctOptionId: 'd',
+    //     pembahasan: r""" <p>
+    //         <h4>Pembahasan: </h4> <br>
+    //         Diketahui:	<br>
+    //         \(T=5.796 K \) <br>
+    //         \(C=2,898×10^{-3}  m K \) <br>
+    //         Ditanya: \(λ_m? \) <br>
+    //         Jawab: <br>
+    //         \(λ_m  T=C \) <br>
+    //         \(λ_m=C/T= \frac{2,898×10^{-3}  m K}{5.796 K} \) <br>
+    //         \(λ_m=5.000×10^{-10}  m=5.000 Å \) <br>
+    //         Jadi panjang gelombang yang memancarkan intensitas radiasi maksimum adalah \(5.000 Å.\) </p>
+    //     """),
+    // // no 9
     Quiz(
       statement: r"""
             Perhatikan pernyataan-pernyataan berikut!
@@ -334,188 +334,199 @@ class _TextQuizOneState extends State<TextQuizOne> {
     return CustomScrollView(
       slivers: [
         SliverList(
-            delegate: SliverChildListDelegate([
-          Padding(
-            padding: const EdgeInsets.only(
-                right: 20.0, left: 20.0, top: 20.0, bottom: 10),
-            child: Row(
-              // ignore: prefer_const_literals_to_create_immutables
-              children: [
-                SizedBox(
-                  width: 50,
-                  height: 50,
-                  child: SvgPicture.asset("assets/images/Icon-pencil.svg"),
-                  //decoration: BoxDecoration(border: Border.all()),
-                ),
-                SizedBox(
-                  width: 20,
-                ),
-                Flexible(
-                  child: Text(
-                    "Uji\nKemampuan 1",
-                    style: TextStyle(
-                      fontSize: 30,
-                      foreground: Paint()
-                        ..style = PaintingStyle.stroke
-                        ..strokeWidth = 1
-                        ..color = CustomColors.blueCustom,
-                    ),
-                  ),
-                )
-              ],
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(right: 20, left: 20),
-            child: Container(
-              color: CustomColors.darkBlueCustom,
-              width: MediaQuery.of(context).size.width * 0.8,
-              height: 2,
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                Text("soal no ${currentQuizIndex + 1}"),
-                SizedBox(
-                  height: 20,
-                ),
-                TeXView(
-                  loadingWidgetBuilder: (BuildContext context) => SizedBox(
-                      height: MediaQuery.of(context).size.width * 0.8,
-                      child: Center(child: CircularProgressIndicator())),
-                  fonts: const [
-                    TeXViewFont(
-                        fontFamily: 'roboto',
-                        src: 'assets/font/Roboto-Black.ttf')
-                  ],
-                  renderingEngine: widget.renderingEngine,
-                  child: TeXViewColumn(
-                    children: [
-                      TeXViewDocument(
-                        quizList[currentQuizIndex].statement,
-                        style: TeXViewStyle(
-                          fontStyle: TeXViewFontStyle(fontFamily: "roboto"),
-                          textAlign: TeXViewTextAlign.Justify,
-                        ),
-                      ),
-                      TeXViewGroup(
-                        children: quizList[currentQuizIndex].options.map(
-                          (QuizOption option) {
-                            return TeXViewGroupItem(
-                              rippleEffect: false,
-                              id: option.id,
-                              child: TeXViewDocument(
-                                option.option,
-                                style: const TeXViewStyle(
-                                  padding: TeXViewPadding.all(10),
-                                ),
-                              ),
-                            );
-                          },
-                        ).toList(),
-                        selectedItemStyle: TeXViewStyle(
-                            borderRadius: const TeXViewBorderRadius.all(10),
-                            border: TeXViewBorder.all(TeXViewBorderDecoration(
-                                borderWidth: 3,
-                                borderColor: Colors.green[900])),
-                            margin: const TeXViewMargin.all(10)),
-                        normalItemStyle:
-                            const TeXViewStyle(margin: TeXViewMargin.all(10)),
-                        onTap: (id) {
-                          selectedOptionId = id;
-                        },
-                      )
-                    ],
-                  ),
-                  style: TeXViewStyle(
-                    margin: TeXViewMargin.all(5),
-                    padding: TeXViewPadding.all(10),
-                    borderRadius: TeXViewBorderRadius.all(10),
-                    border: TeXViewBorder.all(
-                      TeXViewBorderDecoration(
-                          borderColor: Colors.blue,
-                          borderStyle: TeXViewBorderStyle.Solid,
-                          borderWidth: 5),
-                    ),
-                    backgroundColor: Colors.white,
-                  ),
-                ),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          delegate: SliverChildListDelegate(
+            [
+              Padding(
+                padding: const EdgeInsets.only(
+                    right: 20.0, left: 20.0, top: 20.0, bottom: 10),
+                child: Row(
+                  // ignore: prefer_const_literals_to_create_immutables
                   children: [
                     SizedBox(
-                      width: 150,
-                      child: ElevatedButton(
-                        onPressed: () {
-                          setState(() {
-                            if (currentQuizIndex > 0) {
-                              selectedOptionId = "";
-                              currentQuizIndex--;
-                              if (nilai > 0) {
-                                nilai--;
-                              }
-                              jawab.removeLast();
-                            }
-                          });
-                          print(nilai);
-                        },
-                        child: Text("Sebelumnya"),
-                      ),
+                      width: 50,
+                      height: 50,
+                      child: SvgPicture.asset("assets/images/Icon-pencil.svg"),
+                      //decoration: BoxDecoration(border: Border.all()),
                     ),
                     SizedBox(
-                      width: 150,
-                      child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.blue,
+                      width: 20,
+                    ),
+                    Flexible(
+                      child: Text(
+                        "Uji\nKemampuan 1",
+                        style: TextStyle(
+                          fontSize: 30,
+                          foreground: Paint()
+                            ..style = PaintingStyle.stroke
+                            ..strokeWidth = 1
+                            ..color = CustomColors.blueCustom,
                         ),
-                        onPressed: (() {
-                          jawaban = selectedOptionId;
-                          jawab.add(jawaban);
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(right: 20, left: 20),
+                child: Container(
+                  color: CustomColors.darkBlueCustom,
+                  width: MediaQuery.of(context).size.width * 0.8,
+                  height: 2,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  children: [
+                    Text("soal no ${currentQuizIndex + 1}"),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    TeXView(
+                      renderingEngine: TeXViewRenderingEngine.mathjax(),
 
-                          setState(() {
-                            selectedOptionId = "";
-
-                            if (jawaban ==
-                                quizList[currentQuizIndex].correctOptionId) {
-                              nilai++;
-                            }
-                          });
-
-                          if (currentQuizIndex != quizList.length - 1) {
-                            currentQuizIndex++;
-                          }
-
-                          if (jawab.length == 10) {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => HasilScreen(
-                                  nilai: nilai,
-                                  jawab: jawab,
-                                  quizList: quizList,
-                                  headTitle: 'Uji \nKemampuan 1',
-                                  navTitle: 'Uji Kemampuan',
-                                ),
-                              ),
-                            );
-                          }
-                          // print(jawab);
-                          // print(currentQuizIndex);
-                        }),
-                        child: Text(
-                            currentQuizIndex == 9 ? "Selesai" : "Berikutnya"),
+                      // loadingWidgetBuilder: (BuildContext context) => SizedBox(
+                      //   height: MediaQuery.of(context).size.height * 0,
+                      //   child: Center(
+                      //     child: CircularProgressIndicator(),
+                      //   ),
+                      // ),
+                      fonts: const [
+                        TeXViewFont(
+                            fontFamily: 'roboto',
+                            src: 'assets/font/Roboto-Black.ttf')
+                      ],
+                      // renderingEngine: widget.renderingEngine,
+                      child: TeXViewColumn(
+                        children: [
+                          TeXViewDocument(
+                            quizList[currentQuizIndex].statement,
+                            style: TeXViewStyle(
+                              fontStyle: TeXViewFontStyle(fontFamily: "roboto"),
+                              textAlign: TeXViewTextAlign.justify,
+                            ),
+                          ),
+                          TeXViewGroup(
+                            children: quizList[currentQuizIndex].options.map(
+                              (QuizOption option) {
+                                return TeXViewGroupItem(
+                                  rippleEffect: false,
+                                  id: option.id,
+                                  child: TeXViewDocument(
+                                    option.option,
+                                    style: const TeXViewStyle(
+                                      padding: TeXViewPadding.all(10),
+                                    ),
+                                  ),
+                                );
+                              },
+                            ).toList(),
+                            selectedItemStyle: TeXViewStyle(
+                                borderRadius: const TeXViewBorderRadius.all(10),
+                                border: TeXViewBorder.all(
+                                    TeXViewBorderDecoration(
+                                        borderWidth: 3,
+                                        borderColor: Colors.green[900])),
+                                margin: const TeXViewMargin.all(10)),
+                            normalItemStyle: const TeXViewStyle(
+                                margin: TeXViewMargin.all(10)),
+                            onTap: (id) {
+                              selectedOptionId = id;
+                            },
+                          ),
+                        ],
+                      ),
+                      style: const TeXViewStyle(
+                        margin: TeXViewMargin.all(5),
+                        padding: TeXViewPadding.all(10),
+                        borderRadius: TeXViewBorderRadius.all(10),
+                        border: TeXViewBorder.all(
+                          TeXViewBorderDecoration(
+                              borderColor: Colors.blue,
+                              borderStyle: TeXViewBorderStyle.solid,
+                              borderWidth: 5),
+                        ),
+                        backgroundColor: Colors.white,
                       ),
                     ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        SizedBox(
+                          width: 150,
+                          child: ElevatedButton(
+                            onPressed: () {
+                              setState(() {
+                                if (currentQuizIndex > 0) {
+                                  selectedOptionId = "";
+                                  currentQuizIndex--;
+                                  if (nilai > 0) {
+                                    nilai--;
+                                  }
+                                  jawab.removeLast();
+                                }
+                              });
+                              print(nilai);
+                            },
+                            child: Text("Sebelumnya"),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 150,
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.blue,
+                            ),
+                            onPressed: (() {
+                              jawaban = selectedOptionId;
+                              jawab.add(jawaban);
+
+                              setState(() {
+                                selectedOptionId = "";
+
+                                if (jawaban ==
+                                    quizList[currentQuizIndex]
+                                        .correctOptionId) {
+                                  nilai++;
+                                }
+                              });
+
+                              if (currentQuizIndex != quizList.length - 1) {
+                                currentQuizIndex++;
+                              }
+
+                              if (jawab.length == 5) {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => HasilScreen(
+                                      nilai: nilai,
+                                      jawab: jawab,
+                                      quizList: quizList,
+                                      headTitle: 'Uji \nKemampuan 1',
+                                      navTitle: 'Uji Kemampuan',
+                                    ),
+                                  ),
+                                );
+                              }
+                              // print(jawab);
+                              // print(currentQuizIndex);
+                            }),
+                            child: Text(currentQuizIndex == 4
+                                ? "Selesai"
+                                : "Berikutnya"),
+                          ),
+                        ),
+                      ],
+                    )
                   ],
-                )
-              ],
-            ),
+                ),
+              ),
+            ],
           ),
-        ]))
+        )
       ],
     );
   }

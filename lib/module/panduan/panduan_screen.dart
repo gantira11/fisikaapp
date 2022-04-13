@@ -130,7 +130,7 @@ class PanduanScreen extends StatelessWidget {
                     ),
                     Flexible(
                       child: Text(
-                        'Menjelaskan teori kuantum Planck dalam kehidupan sehari-hari',
+                        'Menganalisis pengaruh frekuensi atau panjang gelombang cahaya terhadap terjadinya efek fotolistrik',
                         textAlign: TextAlign.justify,
                         style: TextStyle(fontSize: 16),
                       ),
@@ -148,7 +148,7 @@ class PanduanScreen extends StatelessWidget {
                     ),
                     Flexible(
                       child: Text(
-                        'Menganalisis pengaruh frekuensi atau panjang gelombang cahaya terhadap terjadinya efek fotolistrik',
+                        'Menganalisis gelombang de Braglie pada partikel dan besaran-besaran yang mempengaruhinya',
                         textAlign: TextAlign.justify,
                         style: TextStyle(fontSize: 16),
                       ),
@@ -166,24 +166,6 @@ class PanduanScreen extends StatelessWidget {
                     ),
                     Flexible(
                       child: Text(
-                        'Menganalisis gelombang de Braglie pada partikel dan besaran-besaran yang mempengaruhinya',
-                        textAlign: TextAlign.justify,
-                        style: TextStyle(fontSize: 16),
-                      ),
-                    ),
-                  ],
-                ),
-                SizedBox(height: 3),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      '6. ',
-                      style: TextStyle(fontSize: 16),
-                    ),
-                    Flexible(
-                      child: Text(
                         'Menganalisis gelombang hamburan partikel akibat efek Compton',
                         textAlign: TextAlign.justify,
                         style: TextStyle(fontSize: 16),
@@ -197,7 +179,7 @@ class PanduanScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      '7. ',
+                      '6. ',
                       style: TextStyle(fontSize: 16),
                     ),
                     Flexible(
