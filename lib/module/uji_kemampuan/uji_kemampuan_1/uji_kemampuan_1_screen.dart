@@ -31,7 +31,6 @@ class KemampuanSoalPertama extends StatelessWidget {
           drawer: CustomDrawer(),
           body: TextQuizOne(),
         ),
-      
       ),
     );
   }

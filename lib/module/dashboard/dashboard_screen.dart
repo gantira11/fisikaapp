@@ -2,12 +2,15 @@
 
 import 'package:fisikaapp/common/colors.dart';
 import 'package:fisikaapp/module/materi/materi_screen.dart';
+import 'package:fisikaapp/module/panduan/panduan_screen.dart';
 import 'package:fisikaapp/module/uji_kemampuan/uji_kemampuan.dart';
 import 'package:fisikaapp/module/uji_kompetensi/uji_kompetensi_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class DashBoardScreen extends StatelessWidget {
+  static const routename = "/dashboard";
+
   DashBoardScreen({Key? key}) : super(key: key);
   String assetsName = "assets/images/Group 1.svg";
 
@@ -171,7 +174,10 @@ class DashBoardScreen extends StatelessWidget {
                   height: 20,
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushReplacementNamed(
+                        context, PanduanScreen.routename);
+                  },
                   child: Container(
                     decoration: BoxDecoration(color: Colors.white, boxShadow: [
                       BoxShadow(

@@ -2,6 +2,7 @@
 
 import 'package:fisikaapp/common/colors.dart';
 import 'package:fisikaapp/module/materi/materi_screen.dart';
+import 'package:fisikaapp/module/panduan/panduan_screen.dart';
 import 'package:fisikaapp/module/uji_kemampuan/uji_kemampuan.dart';
 import 'package:fisikaapp/module/uji_kompetensi/uji_kompetensi_screen.dart';
 import 'package:flutter/material.dart';
@@ -162,7 +163,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
             height: 20,
           ),
           InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.pushReplacementNamed(context, PanduanScreen.routename);
+            },
             child: Container(
               decoration: BoxDecoration(color: Colors.white, boxShadow: [
                 BoxShadow(
