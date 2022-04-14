@@ -75,7 +75,7 @@ class PanduanScreen extends StatelessWidget {
                 Align(
                   alignment: Alignment.topLeft,
                   child: Text(
-                    "IPDK",
+                    "IPKD",
                     textAlign: TextAlign.start,
                     style: TextStyle(
                         fontSize: 20,
@@ -166,7 +166,7 @@ class PanduanScreen extends StatelessWidget {
                     ),
                     Flexible(
                       child: Text(
-                        'Menganalisis gelombang hamburan partikel akibat efek Compton',
+                        'Menganalisis besaran fisis pada hamburan partikel akibat efek Compton',
                         textAlign: TextAlign.justify,
                         style: TextStyle(fontSize: 16),
                       ),
@@ -360,7 +360,7 @@ class PanduanScreen extends StatelessWidget {
                             ),
                             TextSpan(
                                 text:
-                                    "berisi 10 soal untuk menguji pemahaman pada masing-masing sub-bagian materi.")
+                                    "berisi 5 soal untuk menguji pemahaman pada masing-masing sub-bagian materi.")
                           ],
                         ),
                       ),
@@ -392,7 +392,7 @@ class PanduanScreen extends StatelessWidget {
                             ),
                             TextSpan(
                                 text:
-                                    "berisi 20 soal untuk menguji pemahaman keseluruhan materi.")
+                                    "berisi 10 soal untuk menguji pemahaman keseluruhan materi.")
                           ],
                         ),
                       ),
