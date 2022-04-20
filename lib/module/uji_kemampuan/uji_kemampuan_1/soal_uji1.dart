@@ -137,7 +137,7 @@ class _TextQuizOneState extends State<TextQuizOne> {
     //     \(λ_m= \frac{2,98×10^{-3}  m K}{298 K}=10^{-5} m \) <br>
     //     Jadi panjang gelombang pembawa energi radiasi maksimum materi tersebut adalah \(10^{-5} m.\) </p> """,
     // ),
-    //no 5
+    //no 5 // no 1
     Quiz(
       statement:
           r"""<h4>Empat benda hitam (A, B, C, dan D) meradiasikan gelombang 
@@ -157,7 +157,7 @@ class _TextQuizOneState extends State<TextQuizOne> {
         QuizOption(
             'e', r""" <h4>(E)   Warna spektrum ketiga benda sama</h4>"""),
       ],
-      correctOptionId: 'd',
+      correctOptionId: 'c',
       pembahasan: r""" <p>
           <h4>Pembahasan: </h4> <br>
           Diketahui hubungan panjang gelombang A, B, C, dan D adalah \(λ_A>λ_B=λ_C>λ_D. \) <br>

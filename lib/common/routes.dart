@@ -7,6 +7,7 @@ import 'package:fisikaapp/module/materi/materi_konsep_foton/konsep_foton_screen.
 import 'package:fisikaapp/module/materi/materi_screen.dart';
 import 'package:fisikaapp/module/materi/sinar_x_dan_efek_compton/sinarx_dan_efek_compton_screen.dart';
 import 'package:fisikaapp/module/panduan/panduan_screen.dart';
+import 'package:fisikaapp/module/panduan/splash_screen.dart';
 import 'package:fisikaapp/module/uji_kemampuan/uji_kemampuan.dart';
 import 'package:fisikaapp/module/uji_kemampuan/uji_kemampuan_1/uji_kemampuan_1_screen.dart';
 import 'package:fisikaapp/module/uji_kemampuan/uji_kemampuan_2/uji_kemampuan_2_screen.dart';
@@ -41,7 +42,9 @@ Route? onGenerateRoutes(RouteSettings settings) {
       return MaterialPageRoute(builder: (_) => DashBoardScreen());
     // case HasilScreen.routename:
     // return MaterialPageRoute(builder: (context) => HasilScreen(nilai: nilai));
-    default:
+    case PanduanScreen.routename:
       return MaterialPageRoute(builder: (_) => PanduanScreen());
+    default:
+      return MaterialPageRoute(builder: (_) => SplashScreen());
   }
 }

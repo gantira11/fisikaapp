@@ -325,11 +325,12 @@ class _SoalUjiKetigaState extends State<SoalUjiKetiga> {
     //   Jadi panjang gelombang foton sebelum tumbukan adalah \(49,988 Å. \)
 
     // </p>"""),
+    // no 5
     Quiz(
       statement: r"""
-                Jika elektron dan foton memiliki panjang gelombang yang sama, 
-                maka keduanya memiliki momentum yang sama.<br><br>
-                SEBAB <br><br>
+                Jika panjang gelombang foton \frac{1}{2} panjang gelombang elektron, 
+                maka momentum foton 2 kali momentum elektron. <br> <br>
+                <b>SEBAB</b> <br><br>
                 Momentum berbanding lurus dengan panjang gelombang
 
 
@@ -348,8 +349,7 @@ class _SoalUjiKetigaState extends State<SoalUjiKetiga> {
       pembahasan: r"""<p>
       <h4>Pembahasan: </h4> <br>
       \(p= \frac{h}{λ} \) <br>
-      Jika λ sama, maka p sama. p berbanding terbalik dengan λ. Pernyataan benar, alasan salah.
-
+      Jika \( λ_f= \frac{1}{2} λ_e \), maka \( p_f=2p_e \) sama. \(p \) berbanding terbalik dengan λ. Pernyataan benar, alasan salah.
     </p>""",
     ),
   ];

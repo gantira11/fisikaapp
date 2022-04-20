@@ -54,12 +54,14 @@ class _SoalUjiKeduaState extends State<SoalUjiKedua> {
       correctOptionId: 'b',
       pembahasan: r""" <p> 
           <h4>Pembahasan: </h4> <br>
-          Efek fotolistrik adalah fenomena terlepasnya elektron dari logam ketika 
-          disinari oleh cahaya. Peristiwa ini terjadi karena sebenarnya cahaya membawa 
-          paket-paket energi yang disebut foton. Frekuensi yang dimiliki cahaya inilah 
-          yang memberikan energi kinetik pada elektron sehingga bisa terlepas dari logam 
-          ketika frekuensi cahaya yang menyinari lebih besar dari frekuensi ambang logam. <br>
+          Efek fotolistrik adalah fenomena terlepasnya elektron dari logam ketika disinari 
+          oleh cahaya. Peristiwa ini terjadi karena sebenarnya cahaya berbentuk paket-paket 
+          energi yang disebut foton. Frekuensi yang dimiliki cahaya inilah yang menyebabkan 
+          elektron di permukaan logam dapat terlepas dan sisa energi dari pelepasan itu 
+          menjadi energi kinetik pada elektron apabila frekuensi cahaya yang menyinari lebih 
+          besar dari frekuensi ambang logam. <br>
           Jadi pernyataan 1 dan 3 benar.
+
        </p>""",
     ),
     // 2
