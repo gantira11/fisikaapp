@@ -43,8 +43,7 @@ class MateriScreen extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    Navigator.pushReplacementNamed(
-                        context, KonsepFotonScreen.routename);
+                    Navigator.pushNamed(context, KonsepFotonScreen.routename);
                   },
                   child: Container(
                     decoration: BoxDecoration(color: Colors.white, boxShadow: [
@@ -90,7 +89,7 @@ class MateriScreen extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    Navigator.pushReplacementNamed(
+                    Navigator.pushNamed(
                         context, EfekFotoListrikScreen.routename);
                   },
                   child: Container(
@@ -137,7 +136,7 @@ class MateriScreen extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    Navigator.pushReplacementNamed(
+                    Navigator.pushNamed(
                         context, SinarXEfekComptonScreen.routename);
                   },
                   child: Container(

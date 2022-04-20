@@ -328,7 +328,7 @@ class _SoalUjiKetigaState extends State<SoalUjiKetiga> {
     // no 5
     Quiz(
       statement: r"""
-                Jika panjang gelombang foton \frac{1}{2} panjang gelombang elektron, 
+                Jika panjang gelombang foton \( \frac{1}{2} \) panjang gelombang elektron, 
                 maka momentum foton 2 kali momentum elektron. <br> <br>
                 <b>SEBAB</b> <br><br>
                 Momentum berbanding lurus dengan panjang gelombang

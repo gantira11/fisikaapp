@@ -193,9 +193,56 @@ class __KonsepFotonWidgetState extends State<_KonsepFotonWidget> {
                   child: Image.asset("assets/materi/konsepfoton/15.png"),
                 ),
               ),
-              SizedBox(
-                height: 40,
-              )
+              Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: InkWell(
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(color: Colors.white, boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.2),
+                        spreadRadius: 1,
+                        blurRadius: 1,
+                        offset: Offset(0, 5), // changes position of shadow
+                      ),
+                    ]),
+                    child: ListTile(
+                      title: Row(
+                        children: [
+                          SizedBox(
+                            width: 50,
+                            height: 50,
+                            child: Icon(
+                              Icons.arrow_back_outlined,
+                              size: 30,
+                              color: CustomColors.darkBlueCustom,
+                            ),
+                            //decoration: BoxDecoration(border: Border.all()),
+                          ),
+                          SizedBox(
+                            width: 30,
+                          ),
+                          Flexible(
+                            child: Text(
+                              "Kembali",
+                              style: TextStyle(
+                                fontSize: 20,
+                                foreground: Paint()
+                                  ..style = PaintingStyle.stroke
+                                  ..strokeWidth = 2
+                                  ..color = CustomColors.blueCustom,
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(height: 20),
             ],
           ),
         )
